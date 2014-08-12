@@ -8505,4 +8505,74 @@ bash-3.2$ git commit -am "generated users controller with 5 actions"[C
 [1m[32m      create[0m      app/assets/javascripts/fanfics.js.coffee
 [1m[37m      invoke[0m    scss
 [1m[32m      create[0m      app/assets/stylesheets/fanfics.css.scss
-bash-3.2$ rails g controller fanfics index create new delete show[C[C[C[C[C[C[C[C[C[Cgit commit -am "generated users controller with 5 actions"[C[C[C[C[C[C[C[C[C[C[C[C[C[Cadd -A[Kstatuscommit -am "generated users controller with 5 actions"[C[C[C[C[C[C[C[C[C[C[C[C[C[Cstatus[Kcommit -am "generated users controller with 5 actions"[C[C[C[C[C[C[C[C[C[C[C[C[C[Cstatus[Krails g controller users index create new delete show
+bash-3.2$ rails g controller fanfics index create new delete show[C[C[C[C[C[C[C[C[C[Cgit commit -am "generated users controller with 5 actions"[C[C[C[C[C[C[C[C[C[C[C[C[C[Cadd -A[Kstatuscommit -am "generated users controller with 5 actions"[C[C[C[C[C[C[C[C[C[C[C[C[C[Cstatus[Kcommit -am "generated users controller with 5 actions"[C[C[C[C[C[C[C[C[C[C[C[C[C[Cstatus[Krails g controller users index create new delete show[C[C[C[C[C[C[C[C[C[Cgit status[Krails g controller users index create new delete show[1P[1P[1P[1P[1P[1@t[1@a[1@g[1@s
+[1m[32m      create[0m  app/controllers/tags_controller.rb
+[1m[32m       route[0m  get 'tags/show'
+[1m[32m       route[0m  get 'tags/delete'
+[1m[32m       route[0m  get 'tags/new'
+[1m[32m       route[0m  get 'tags/create'
+[1m[32m       route[0m  get 'tags/index'
+[1m[37m      invoke[0m  erb
+[1m[32m      create[0m    app/views/tags
+[1m[32m      create[0m    app/views/tags/index.html.erb
+[1m[32m      create[0m    app/views/tags/create.html.erb
+[1m[32m      create[0m    app/views/tags/new.html.erb
+[1m[32m      create[0m    app/views/tags/delete.html.erb
+[1m[32m      create[0m    app/views/tags/show.html.erb
+[1m[37m      invoke[0m  rspec
+[1m[37m      invoke[0m  helper
+[1m[32m      create[0m    app/helpers/tags_helper.rb
+[1m[37m      invoke[0m    rspec
+[1m[37m      invoke[0m  assets
+[1m[37m      invoke[0m    coffee
+[1m[32m      create[0m      app/assets/javascripts/tags.js.coffee
+[1m[37m      invoke[0m    scss
+[1m[32m      create[0m      app/assets/stylesheets/tags.css.scss
+bash-3.2$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   .idea/workspace.xml[m
+	[31mmodified:   commands.txt[m
+	[31mmodified:   config/routes.rb[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31mapp/assets/javascripts/fanfics.js.coffee[m
+	[31mapp/assets/javascripts/tags.js.coffee[m
+	[31mapp/assets/stylesheets/fanfics.css.scss[m
+	[31mapp/assets/stylesheets/tags.css.scss[m
+	[31mapp/controllers/fanfics_controller.rb[m
+	[31mapp/controllers/tags_controller.rb[m
+	[31mapp/helpers/fanfics_helper.rb[m
+	[31mapp/helpers/tags_helper.rb[m
+	[31mapp/views/fanfics/[m
+	[31mapp/views/tags/[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+bash-3.2$ git add -A
+bash-3.2$ git commit -m "controllers for fanfics re[K[Kand tags"
+[master 0aac7c9] controllers for fanfics and tags
+ 21 files changed, 166 insertions(+), 13 deletions(-)
+ create mode 100644 app/assets/javascripts/fanfics.js.coffee
+ create mode 100644 app/assets/javascripts/tags.js.coffee
+ create mode 100644 app/assets/stylesheets/fanfics.css.scss
+ create mode 100644 app/assets/stylesheets/tags.css.scss
+ create mode 100644 app/controllers/fanfics_controller.rb
+ create mode 100644 app/controllers/tags_controller.rb
+ create mode 100644 app/helpers/fanfics_helper.rb
+ create mode 100644 app/helpers/tags_helper.rb
+ create mode 100644 app/views/fanfics/create.html.erb
+ create mode 100644 app/views/fanfics/delete.html.erb
+ create mode 100644 app/views/fanfics/index.html.erb
+ create mode 100644 app/views/fanfics/new.html.erb
+ create mode 100644 app/views/fanfics/show.html.erb
+ create mode 100644 app/views/tags/create.html.erb
+ create mode 100644 app/views/tags/delete.html.erb
+ create mode 100644 app/views/tags/index.html.erb
+ create mode 100644 app/views/tags/new.html.erb
+ create mode 100644 app/views/tags/show.html.erb
+bash-3.2$ git commit -m "controllers for fanfics and tags"[C[C[C[C[C[C[C[C[C[C[C[C[C[Cadd -A[Kstatusrails g controller tags index create new delete show[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3@fanfic[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit commit -am "generated users controller with 5 actions"[C[C[C[C[C[C[C[C[C[C[C[C[C[Cadd -A[Kstatuscommit -am "generated users controller with 5 actions"[C[C[C[C[C[C[C[C[C[C[C[C[C[Cstatus[Krails g controller users index create new delete show
