@@ -1,4 +1,24 @@
 Rails.application.routes.draw do
+  get 'tags/index'
+
+  get 'tags/create'
+
+  get 'tags/new'
+
+  get 'tags/delete'
+
+  get 'tags/show'
+
+  get 'fanfics/index'
+
+  get 'fanfics/create'
+
+  get 'fanfics/new'
+
+  get 'fanfics/delete'
+
+  get 'fanfics/show'
+
   get 'users/index'
 
   get 'users/create'

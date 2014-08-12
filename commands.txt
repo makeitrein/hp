@@ -8432,4 +8432,77 @@ Untracked files:
 	[31mspec/support/[m
 
 no changes added to commit (use "git add" and/or "git commit -a")
-bash-3.2$ git commit -am "generated users conto[K[K[K[K
+bash-3.2$ git commit -am "generated users conto[K[K[K[Kn[Kontroller with 5 actions"
+[master 2af09d3] generated users controller with 5 actions
+ 9 files changed, 546 insertions(+), 163 deletions(-)
+ rewrite app/views/layouts/application.html.erb (96%)
+ rewrite spec/features/home_spec.rb (80%)
+ rewrite spec/models/user_spec.rb (96%)
+bash-3.2$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31m.idea/runConfigurations/[m
+	[31mapp/assets/javascripts/home.js.coffee[m
+	[31mapp/assets/javascripts/users.js.coffee[m
+	[31mapp/assets/stylesheets/home.css.scss[m
+	[31mapp/assets/stylesheets/users.css.scss[m
+	[31mapp/controllers/home_controller.rb[m
+	[31mapp/controllers/users_controller.rb[m
+	[31mapp/helpers/home_helper.rb[m
+	[31mapp/helpers/users_helper.rb[m
+	[31mapp/views/home/[m
+	[31mapp/views/users/[m
+	[31mspec/controllers/[m
+	[31mspec/support/[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+bash-3.2$ git add -A
+bash-3.2$ git add -Astatuscommit -am "generated users controller with 5 actions"
+[master 1dbbc1e] generated users controller with 5 actions
+ 20 files changed, 177 insertions(+)
+ create mode 100644 .idea/runConfigurations/Development__hpfic.xml
+ create mode 100644 .idea/runConfigurations/Production__hpfic.xml
+ create mode 100644 .idea/runConfigurations/spec__hpfic.xml
+ create mode 100644 .idea/runConfigurations/test__hpfic.xml
+ create mode 100644 app/assets/javascripts/home.js.coffee
+ create mode 100644 app/assets/javascripts/users.js.coffee
+ create mode 100644 app/assets/stylesheets/home.css.scss
+ create mode 100644 app/assets/stylesheets/users.css.scss
+ create mode 100644 app/controllers/home_controller.rb
+ create mode 100644 app/controllers/users_controller.rb
+ create mode 100644 app/helpers/home_helper.rb
+ create mode 100644 app/helpers/users_helper.rb
+ create mode 100644 app/views/home/index.html.erb
+ create mode 100644 app/views/users/create.html.erb
+ create mode 100644 app/views/users/delete.html.erb
+ create mode 100644 app/views/users/index.html.erb
+ create mode 100644 app/views/users/new.html.erb
+ create mode 100644 app/views/users/show.html.erb
+ create mode 100644 spec/controllers/home_controller_spec.rb
+ create mode 100644 spec/support/capybara.rb
+bash-3.2$ git commit -am "generated users controller with 5 actions"[C[C[C[C[C[C[C[C[C[C[C[C[C[Cadd -A[Kstatuscommit -am "generated users controller with 5 actions"[C[C[C[C[C[C[C[C[C[C[C[C[C[Cstatus[Krails g controller users index create new delete show[1P[1P[1P[1P[1P[1@f[1@a[1@n[1@f[1@i[1@c[1@s
+[1m[32m      create[0m  app/controllers/fanfics_controller.rb
+[1m[32m       route[0m  get 'fanfics/show'
+[1m[32m       route[0m  get 'fanfics/delete'
+[1m[32m       route[0m  get 'fanfics/new'
+[1m[32m       route[0m  get 'fanfics/create'
+[1m[32m       route[0m  get 'fanfics/index'
+[1m[37m      invoke[0m  erb
+[1m[32m      create[0m    app/views/fanfics
+[1m[32m      create[0m    app/views/fanfics/index.html.erb
+[1m[32m      create[0m    app/views/fanfics/create.html.erb
+[1m[32m      create[0m    app/views/fanfics/new.html.erb
+[1m[32m      create[0m    app/views/fanfics/delete.html.erb
+[1m[32m      create[0m    app/views/fanfics/show.html.erb
+[1m[37m      invoke[0m  rspec
+[1m[37m      invoke[0m  helper
+[1m[32m      create[0m    app/helpers/fanfics_helper.rb
+[1m[37m      invoke[0m    rspec
+[1m[37m      invoke[0m  assets
+[1m[37m      invoke[0m    coffee
+[1m[32m      create[0m      app/assets/javascripts/fanfics.js.coffee
+[1m[37m      invoke[0m    scss
+[1m[32m      create[0m      app/assets/stylesheets/fanfics.css.scss
+bash-3.2$ rails g controller fanfics index create new delete show[C[C[C[C[C[C[C[C[C[Cgit commit -am "generated users controller with 5 actions"[C[C[C[C[C[C[C[C[C[C[C[C[C[Cadd -A[Kstatuscommit -am "generated users controller with 5 actions"[C[C[C[C[C[C[C[C[C[C[C[C[C[Cstatus[Kcommit -am "generated users controller with 5 actions"[C[C[C[C[C[C[C[C[C[C[C[C[C[Cstatus[Krails g controller users index create new delete show
