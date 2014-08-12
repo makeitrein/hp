@@ -8575,4 +8575,112 @@ bash-3.2$ git commit -m "controllers for fanfics re[K[Kand tags"
  create mode 100644 app/views/tags/index.html.erb
  create mode 100644 app/views/tags/new.html.erb
  create mode 100644 app/views/tags/show.html.erb
-bash-3.2$ git commit -m "controllers for fanfics and tags"[C[C[C[C[C[C[C[C[C[C[C[C[C[Cadd -A[Kstatusrails g controller tags index create new delete show[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3@fanfic[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit commit -am "generated users controller with 5 actions"[C[C[C[C[C[C[C[C[C[C[C[C[C[Cadd -A[Kstatuscommit -am "generated users controller with 5 actions"[C[C[C[C[C[C[C[C[C[C[C[C[C[Cstatus[Krails g controller users index create new delete show
+bash-3.2$ git commit -m "controllers for fanfics and tags"[C[C[C[C[C[C[C[C[C[C[C[C[C[Cadd -A[Kstatusrails g controller tags index create new delete show[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3@fanfic[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit commit -am "generated users controller with 5 actions"[C[C[C[C[C[C[C[C[C[C[C[C[C[Cadd -A[Kstatuscommit -am "generated users controller with 5 actions"[C[C[C[C[C[C[C[C[C[C[C[C[C[Cstatus[Krails g controller users index create new delete show[C[C[C[C[C[C[C[C[C[C[25Pvim spec/support/capybara.rb[C[C[C[C[C[C[C[C[C[Crails g controller users index create new delete show[1P[1P[1P[1P[1P[1@r[1@e[1@v[1@i[1@e[1@w[1@s
+[1m[32m      create[0m  app/controllers/reviews_controller.rb
+[1m[32m       route[0m  get 'reviews/show'
+[1m[32m       route[0m  get 'reviews/delete'
+[1m[32m       route[0m  get 'reviews/new'
+[1m[32m       route[0m  get 'reviews/create'
+[1m[32m       route[0m  get 'reviews/index'
+[1m[37m      invoke[0m  erb
+[1m[32m      create[0m    app/views/reviews
+[1m[32m      create[0m    app/views/reviews/index.html.erb
+[1m[32m      create[0m    app/views/reviews/create.html.erb
+[1m[32m      create[0m    app/views/reviews/new.html.erb
+[1m[32m      create[0m    app/views/reviews/delete.html.erb
+[1m[32m      create[0m    app/views/reviews/show.html.erb
+[1m[37m      invoke[0m  rspec
+[1m[37m      invoke[0m  helper
+[1m[32m      create[0m    app/helpers/reviews_helper.rb
+[1m[37m      invoke[0m    rspec
+[1m[37m      invoke[0m  assets
+[1m[37m      invoke[0m    coffee
+[1m[32m      create[0m      app/assets/javascripts/reviews.js.coffee
+[1m[37m      invoke[0m    scss
+[1m[32m      create[0m      app/assets/stylesheets/reviews.css.scss
+bash-3.2$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   commands.txt[m
+	[31mmodified:   config/routes.rb[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31mapp/assets/javascripts/reviews.js.coffee[m
+	[31mapp/assets/stylesheets/reviews.css.scss[m
+	[31mapp/controllers/reviews_controller.rb[m
+	[31mapp/helpers/reviews_helper.rb[m
+	[31mapp/views/reviews/[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+bash-3.2$ git add -A
+bash-3.2$ git commit -m "reviews conto[Kroller with CRUD actions"
+[master dd920f0] reviews controller with CRUD actions
+ 11 files changed, 115 insertions(+), 1 deletion(-)
+ create mode 100644 app/assets/javascripts/reviews.js.coffee
+ create mode 100644 app/assets/stylesheets/reviews.css.scss
+ create mode 100644 app/controllers/reviews_controller.rb
+ create mode 100644 app/helpers/reviews_helper.rb
+ create mode 100644 app/views/reviews/create.html.erb
+ create mode 100644 app/views/reviews/delete.html.erb
+ create mode 100644 app/views/reviews/index.html.erb
+ create mode 100644 app/views/reviews/new.html.erb
+ create mode 100644 app/views/reviews/show.html.erb
+bash-3.2$ rake routes
+                  Prefix Verb   URI Pattern                    Controller#Action
+                 reviews GET    /reviews(.:format)             reviews#index
+                         POST   /reviews(.:format)             reviews#create
+              new_review GET    /reviews/new(.:format)         reviews#new
+             edit_review GET    /reviews/:id/edit(.:format)    reviews#edit
+                  review GET    /reviews/:id(.:format)         reviews#show
+                         PATCH  /reviews/:id(.:format)         reviews#update
+                         PUT    /reviews/:id(.:format)         reviews#update
+                         DELETE /reviews/:id(.:format)         reviews#destroy
+                 fanfics GET    /fanfics(.:format)             fanfics#index
+                         POST   /fanfics(.:format)             fanfics#create
+              new_fanfic GET    /fanfics/new(.:format)         fanfics#new
+             edit_fanfic GET    /fanfics/:id/edit(.:format)    fanfics#edit
+                  fanfic GET    /fanfics/:id(.:format)         fanfics#show
+                         PATCH  /fanfics/:id(.:format)         fanfics#update
+                         PUT    /fanfics/:id(.:format)         fanfics#update
+                         DELETE /fanfics/:id(.:format)         fanfics#destroy
+                    tags GET    /tags(.:format)                tags#index
+                         POST   /tags(.:format)                tags#create
+                 new_tag GET    /tags/new(.:format)            tags#new
+                edit_tag GET    /tags/:id/edit(.:format)       tags#edit
+                     tag GET    /tags/:id(.:format)            tags#show
+                         PATCH  /tags/:id(.:format)            tags#update
+                         PUT    /tags/:id(.:format)            tags#update
+                         DELETE /tags/:id(.:format)            tags#destroy
+                   users GET    /users(.:format)               users#index
+                         POST   /users(.:format)               users#create
+                new_user GET    /users/new(.:format)           users#new
+               edit_user GET    /users/:id/edit(.:format)      users#edit
+                    user GET    /users/:id(.:format)           users#show
+                         PATCH  /users/:id(.:format)           users#update
+                         PUT    /users/:id(.:format)           users#update
+                         DELETE /users/:id(.:format)           users#destroy
+                    root GET    /                              home#index
+        new_user_session GET    /users/sign_in(.:format)       devise/sessions#new
+            user_session POST   /users/sign_in(.:format)       devise/sessions#create
+    destroy_user_session DELETE /users/sign_out(.:format)      devise/sessions#destroy
+           user_password POST   /users/password(.:format)      devise/passwords#create
+       new_user_password GET    /users/password/new(.:format)  devise/passwords#new
+      edit_user_password GET    /users/password/edit(.:format) devise/passwords#edit
+                         PATCH  /users/password(.:format)      devise/passwords#update
+                         PUT    /users/password(.:format)      devise/passwords#update
+cancel_user_registration GET    /users/cancel(.:format)        devise/registrations#cancel
+       user_registration POST   /users(.:format)               devise/registrations#create
+   new_user_registration GET    /users/sign_up(.:format)       devise/registrations#new
+  edit_user_registration GET    /users/edit(.:format)          devise/registrations#edit
+                         PATCH  /users(.:format)               devise/registrations#update
+                         PUT    /users(.:format)               devise/registrations#update
+                         DELETE /users(.:format)               devise/registrations#destroy
+bash-3.2$ exit
+exit
+
+Script done on Tue Aug 12 00:06:33 2014

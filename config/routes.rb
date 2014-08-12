@@ -1,43 +1,11 @@
 Rails.application.routes.draw do
-  get 'reviews/index'
+  resources :reviews
 
-  get 'reviews/create'
+  resources :fanfics
 
-  get 'reviews/new'
+  resources :tags
 
-  get 'reviews/delete'
-
-  get 'reviews/show'
-
-  get 'tags/index'
-
-  get 'tags/create'
-
-  get 'tags/new'
-
-  get 'tags/delete'
-
-  get 'tags/show'
-
-  get 'fanfics/index'
-
-  get 'fanfics/create'
-
-  get 'fanfics/new'
-
-  get 'fanfics/delete'
-
-  get 'fanfics/show'
-
-  get 'users/index'
-
-  get 'users/create'
-
-  get 'users/new'
-
-  get 'users/delete'
-
-  get 'users/show'
+  resources :users
 
   root to: 'home#index'
 
