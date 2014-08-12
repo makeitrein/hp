@@ -7670,4 +7670,655 @@ Using turbolinks 2.2.2
 Using uglifier 2.5.3
 [32mYour bundle is complete![0m
 [32mIt was installed into ./vendor/ruby[0m
-bash-3.2$ 
+bash-3.2$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   .idea/hpfic.iml[m
+	[31mmodified:   .idea/workspace.xml[m
+	[31mmodified:   Gemfile[m
+	[31mmodified:   Gemfile.lock[m
+	[31mmodified:   commands.txt[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31m.idea/.generators[m
+	[31m.idea/.rakeTasks[m
+	[31m.idea/dataSources.ids[m
+	[31m.idea/dataSources.xml[m
+	[31mspec/features/[m
+	[31mvendor/ruby/ruby/2.1.0/bin/guard[m
+	[31mvendor/ruby/ruby/2.1.0/bin/listen[m
+	[31mvendor/ruby/ruby/2.1.0/bin/pry[m
+	[31mvendor/ruby/ruby/2.1.0/build_info/celluloid-0.15.2.info[m
+	[31mvendor/ruby/ruby/2.1.0/build_info/formatador-0.2.5.info[m
+	[31mvendor/ruby/ruby/2.1.0/build_info/guard-2.6.1.info[m
+	[31mvendor/ruby/ruby/2.1.0/build_info/guard-rspec-4.3.1.info[m
+	[31mvendor/ruby/ruby/2.1.0/build_info/listen-2.7.9.info[m
+	[31mvendor/ruby/ruby/2.1.0/build_info/lumberjack-1.0.9.info[m
+	[31mvendor/ruby/ruby/2.1.0/build_info/method_source-0.8.2.info[m
+	[31mvendor/ruby/ruby/2.1.0/build_info/pry-0.10.0.info[m
+	[31mvendor/ruby/ruby/2.1.0/build_info/rb-fsevent-0.9.4.info[m
+	[31mvendor/ruby/ruby/2.1.0/build_info/rb-inotify-0.9.5.info[m
+	[31mvendor/ruby/ruby/2.1.0/build_info/rspec-3.0.0.info[m
+	[31mvendor/ruby/ruby/2.1.0/build_info/slop-3.6.0.info[m
+	[31mvendor/ruby/ruby/2.1.0/build_info/timers-1.1.0.info[m
+	[31mvendor/ruby/ruby/2.1.0/cache/celluloid-0.15.2.gem[m
+	[31mvendor/ruby/ruby/2.1.0/cache/formatador-0.2.5.gem[m
+	[31mvendor/ruby/ruby/2.1.0/cache/guard-2.6.1.gem[m
+	[31mvendor/ruby/ruby/2.1.0/cache/guard-rspec-4.3.1.gem[m
+	[31mvendor/ruby/ruby/2.1.0/cache/listen-2.7.9.gem[m
+	[31mvendor/ruby/ruby/2.1.0/cache/lumberjack-1.0.9.gem[m
+	[31mvendor/ruby/ruby/2.1.0/cache/method_source-0.8.2.gem[m
+	[31mvendor/ruby/ruby/2.1.0/cache/pry-0.10.0.gem[m
+	[31mvendor/ruby/ruby/2.1.0/cache/rb-fsevent-0.9.4.gem[m
+	[31mvendor/ruby/ruby/2.1.0/cache/rb-inotify-0.9.5.gem[m
+	[31mvendor/ruby/ruby/2.1.0/cache/rspec-3.0.0.gem[m
+	[31mvendor/ruby/ruby/2.1.0/cache/slop-3.6.0.gem[m
+	[31mvendor/ruby/ruby/2.1.0/cache/timers-1.1.0.gem[m
+	[31mvendor/ruby/ruby/2.1.0/gems/celluloid-0.15.2/[m
+	[31mvendor/ruby/ruby/2.1.0/gems/formatador-0.2.5/[m
+	[31mvendor/ruby/ruby/2.1.0/gems/guard-2.6.1/[m
+	[31mvendor/ruby/ruby/2.1.0/gems/guard-rspec-4.3.1/[m
+	[31mvendor/ruby/ruby/2.1.0/gems/listen-2.7.9/[m
+	[31mvendor/ruby/ruby/2.1.0/gems/lumberjack-1.0.9/[m
+	[31mvendor/ruby/ruby/2.1.0/gems/method_source-0.8.2/[m
+	[31mvendor/ruby/ruby/2.1.0/gems/pry-0.10.0/[m
+	[31mvendor/ruby/ruby/2.1.0/gems/rb-fsevent-0.9.4/[m
+	[31mvendor/ruby/ruby/2.1.0/gems/rb-inotify-0.9.5/[m
+	[31mvendor/ruby/ruby/2.1.0/gems/rspec-3.0.0/[m
+	[31mvendor/ruby/ruby/2.1.0/gems/slop-3.6.0/[m
+	[31mvendor/ruby/ruby/2.1.0/gems/timers-1.1.0/[m
+	[31mvendor/ruby/ruby/2.1.0/specifications/celluloid-0.15.2.gemspec[m
+	[31mvendor/ruby/ruby/2.1.0/specifications/formatador-0.2.5.gemspec[m
+	[31mvendor/ruby/ruby/2.1.0/specifications/guard-2.6.1.gemspec[m
+	[31mvendor/ruby/ruby/2.1.0/specifications/guard-rspec-4.3.1.gemspec[m
+	[31mvendor/ruby/ruby/2.1.0/specifications/listen-2.7.9.gemspec[m
+	[31mvendor/ruby/ruby/2.1.0/specifications/lumberjack-1.0.9.gemspec[m
+	[31mvendor/ruby/ruby/2.1.0/specifications/method_source-0.8.2.gemspec[m
+	[31mvendor/ruby/ruby/2.1.0/specifications/pry-0.10.0.gemspec[m
+	[31mvendor/ruby/ruby/2.1.0/specifications/rb-fsevent-0.9.4.gemspec[m
+	[31mvendor/ruby/ruby/2.1.0/specifications/rb-inotify-0.9.5.gemspec[m
+	[31mvendor/ruby/ruby/2.1.0/specifications/rspec-3.0.0.gemspec[m
+	[31mvendor/ruby/ruby/2.1.0/specifications/slop-3.6.0.gemspec[m
+	[31mvendor/ruby/ruby/2.1.0/specifications/timers-1.1.0.gemspec[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+bash-3.2$ git add -A
+bash-3.2$ git commit -m "first test and guard rails" "g"e"m"
+[master 7939d6f] first test and guard rails gem
+ 556 files changed, 52688 insertions(+), 6 deletions(-)
+ create mode 100644 .idea/.generators
+ create mode 100644 .idea/.rakeTasks
+ create mode 100644 .idea/dataSources.ids
+ create mode 100644 .idea/dataSources.xml
+ create mode 100644 spec/features/home_spec.rb
+ create mode 100755 vendor/ruby/ruby/2.1.0/bin/guard
+ create mode 100755 vendor/ruby/ruby/2.1.0/bin/listen
+ create mode 100755 vendor/ruby/ruby/2.1.0/bin/pry
+ create mode 100644 vendor/ruby/ruby/2.1.0/build_info/celluloid-0.15.2.info
+ create mode 100644 vendor/ruby/ruby/2.1.0/build_info/formatador-0.2.5.info
+ create mode 100644 vendor/ruby/ruby/2.1.0/build_info/guard-2.6.1.info
+ create mode 100644 vendor/ruby/ruby/2.1.0/build_info/guard-rspec-4.3.1.info
+ create mode 100644 vendor/ruby/ruby/2.1.0/build_info/listen-2.7.9.info
+ create mode 100644 vendor/ruby/ruby/2.1.0/build_info/lumberjack-1.0.9.info
+ create mode 100644 vendor/ruby/ruby/2.1.0/build_info/method_source-0.8.2.info
+ create mode 100644 vendor/ruby/ruby/2.1.0/build_info/pry-0.10.0.info
+ create mode 100644 vendor/ruby/ruby/2.1.0/build_info/rb-fsevent-0.9.4.info
+ create mode 100644 vendor/ruby/ruby/2.1.0/build_info/rb-inotify-0.9.5.info
+ create mode 100644 vendor/ruby/ruby/2.1.0/build_info/rspec-3.0.0.info
+ create mode 100644 vendor/ruby/ruby/2.1.0/build_info/slop-3.6.0.info
+ create mode 100644 vendor/ruby/ruby/2.1.0/build_info/timers-1.1.0.info
+ create mode 100644 vendor/ruby/ruby/2.1.0/cache/celluloid-0.15.2.gem
+ create mode 100644 vendor/ruby/ruby/2.1.0/cache/formatador-0.2.5.gem
+ create mode 100644 vendor/ruby/ruby/2.1.0/cache/guard-2.6.1.gem
+ create mode 100644 vendor/ruby/ruby/2.1.0/cache/guard-rspec-4.3.1.gem
+ create mode 100644 vendor/ruby/ruby/2.1.0/cache/listen-2.7.9.gem
+ create mode 100644 vendor/ruby/ruby/2.1.0/cache/lumberjack-1.0.9.gem
+ create mode 100644 vendor/ruby/ruby/2.1.0/cache/method_source-0.8.2.gem
+ create mode 100644 vendor/ruby/ruby/2.1.0/cache/pry-0.10.0.gem
+ create mode 100644 vendor/ruby/ruby/2.1.0/cache/rb-fsevent-0.9.4.gem
+ create mode 100644 vendor/ruby/ruby/2.1.0/cache/rb-inotify-0.9.5.gem
+ create mode 100644 vendor/ruby/ruby/2.1.0/cache/rspec-3.0.0.gem
+ create mode 100644 vendor/ruby/ruby/2.1.0/cache/slop-3.6.0.gem
+ create mode 100644 vendor/ruby/ruby/2.1.0/cache/timers-1.1.0.gem
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/celluloid-0.15.2/README.md
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/celluloid-0.15.2/lib/celluloid.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/celluloid-0.15.2/lib/celluloid/actor.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/celluloid-0.15.2/lib/celluloid/autostart.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/celluloid-0.15.2/lib/celluloid/call_chain.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/celluloid-0.15.2/lib/celluloid/calls.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/celluloid-0.15.2/lib/celluloid/condition.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/celluloid-0.15.2/lib/celluloid/core_ext.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/celluloid-0.15.2/lib/celluloid/cpu_counter.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/celluloid-0.15.2/lib/celluloid/evented_mailbox.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/celluloid-0.15.2/lib/celluloid/fiber.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/celluloid-0.15.2/lib/celluloid/fsm.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/celluloid-0.15.2/lib/celluloid/future.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/celluloid-0.15.2/lib/celluloid/internal_pool.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/celluloid-0.15.2/lib/celluloid/legacy.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/celluloid-0.15.2/lib/celluloid/links.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/celluloid-0.15.2/lib/celluloid/logger.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/celluloid-0.15.2/lib/celluloid/logging.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/celluloid-0.15.2/lib/celluloid/logging/incident.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/celluloid-0.15.2/lib/celluloid/logging/incident_logger.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/celluloid-0.15.2/lib/celluloid/logging/incident_reporter.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/celluloid-0.15.2/lib/celluloid/logging/log_event.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/celluloid-0.15.2/lib/celluloid/logging/ring_buffer.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/celluloid-0.15.2/lib/celluloid/mailbox.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/celluloid-0.15.2/lib/celluloid/method.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/celluloid-0.15.2/lib/celluloid/notifications.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/celluloid-0.15.2/lib/celluloid/pool_manager.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/celluloid-0.15.2/lib/celluloid/properties.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/celluloid-0.15.2/lib/celluloid/proxies/abstract_proxy.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/celluloid-0.15.2/lib/celluloid/proxies/actor_proxy.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/celluloid-0.15.2/lib/celluloid/proxies/async_proxy.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/celluloid-0.15.2/lib/celluloid/proxies/block_proxy.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/celluloid-0.15.2/lib/celluloid/proxies/future_proxy.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/celluloid-0.15.2/lib/celluloid/proxies/sync_proxy.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/celluloid-0.15.2/lib/celluloid/receivers.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/celluloid-0.15.2/lib/celluloid/registry.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/celluloid-0.15.2/lib/celluloid/responses.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/celluloid-0.15.2/lib/celluloid/rspec.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/celluloid-0.15.2/lib/celluloid/signals.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/celluloid-0.15.2/lib/celluloid/stack_dump.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/celluloid-0.15.2/lib/celluloid/supervision_group.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/celluloid-0.15.2/lib/celluloid/supervisor.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/celluloid-0.15.2/lib/celluloid/system_events.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/celluloid-0.15.2/lib/celluloid/task_set.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/celluloid-0.15.2/lib/celluloid/tasks.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/celluloid-0.15.2/lib/celluloid/tasks/task_fiber.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/celluloid-0.15.2/lib/celluloid/tasks/task_thread.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/celluloid-0.15.2/lib/celluloid/test.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/celluloid-0.15.2/lib/celluloid/thread.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/celluloid-0.15.2/lib/celluloid/thread_handle.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/celluloid-0.15.2/lib/celluloid/uuid.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/celluloid-0.15.2/spec/celluloid/actor_spec.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/celluloid-0.15.2/spec/celluloid/block_spec.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/celluloid-0.15.2/spec/celluloid/calls_spec.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/celluloid-0.15.2/spec/celluloid/condition_spec.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/celluloid-0.15.2/spec/celluloid/evented_mailbox_spec.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/celluloid-0.15.2/spec/celluloid/fsm_spec.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/celluloid-0.15.2/spec/celluloid/future_spec.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/celluloid-0.15.2/spec/celluloid/internal_pool_spec.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/celluloid-0.15.2/spec/celluloid/links_spec.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/celluloid-0.15.2/spec/celluloid/logging/ring_buffer_spec.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/celluloid-0.15.2/spec/celluloid/mailbox_spec.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/celluloid-0.15.2/spec/celluloid/notifications_spec.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/celluloid-0.15.2/spec/celluloid/pool_spec.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/celluloid-0.15.2/spec/celluloid/properties_spec.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/celluloid-0.15.2/spec/celluloid/registry_spec.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/celluloid-0.15.2/spec/celluloid/stack_dump_spec.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/celluloid-0.15.2/spec/celluloid/supervision_group_spec.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/celluloid-0.15.2/spec/celluloid/supervisor_spec.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/celluloid-0.15.2/spec/celluloid/tasks/task_fiber_spec.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/celluloid-0.15.2/spec/celluloid/tasks/task_thread_spec.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/celluloid-0.15.2/spec/celluloid/thread_handle_spec.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/celluloid-0.15.2/spec/celluloid/uuid_spec.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/celluloid-0.15.2/spec/spec_helper.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/celluloid-0.15.2/spec/support/actor_examples.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/celluloid-0.15.2/spec/support/example_actor_class.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/celluloid-0.15.2/spec/support/mailbox_examples.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/celluloid-0.15.2/spec/support/task_examples.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/formatador-0.2.5/CONTRIBUTING.md
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/formatador-0.2.5/CONTRIBUTORS.md
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/formatador-0.2.5/Gemfile
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/formatador-0.2.5/LICENSE.md
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/formatador-0.2.5/README.rdoc
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/formatador-0.2.5/Rakefile
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/formatador-0.2.5/changelog.txt
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/formatador-0.2.5/formatador.gemspec
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/formatador-0.2.5/lib/formatador.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/formatador-0.2.5/lib/formatador/progressbar.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/formatador-0.2.5/lib/formatador/table.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/formatador-0.2.5/tests/basic_tests.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/formatador-0.2.5/tests/table_tests.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/formatador-0.2.5/tests/tests_helper.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/guard-2.6.1/CHANGELOG.md
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/guard-2.6.1/LICENSE
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/guard-2.6.1/README.md
+ create mode 100755 vendor/ruby/ruby/2.1.0/gems/guard-2.6.1/bin/fsevent_watch_guard
+ create mode 100755 vendor/ruby/ruby/2.1.0/gems/guard-2.6.1/bin/guard
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/guard-2.6.1/images/failed.png
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/guard-2.6.1/images/guard.png
+ create mode 100755 vendor/ruby/ruby/2.1.0/gems/guard-2.6.1/images/pending.png
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/guard-2.6.1/images/success.png
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/guard-2.6.1/lib/guard.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/guard-2.6.1/lib/guard/cli.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/guard-2.6.1/lib/guard/commander.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/guard-2.6.1/lib/guard/commands/all.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/guard-2.6.1/lib/guard/commands/change.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/guard-2.6.1/lib/guard/commands/notification.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/guard-2.6.1/lib/guard/commands/pause.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/guard-2.6.1/lib/guard/commands/reload.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/guard-2.6.1/lib/guard/commands/scope.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/guard-2.6.1/lib/guard/commands/show.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/guard-2.6.1/lib/guard/deprecated_methods.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/guard-2.6.1/lib/guard/deprecator.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/guard-2.6.1/lib/guard/dsl.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/guard-2.6.1/lib/guard/dsl_describer.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/guard-2.6.1/lib/guard/group.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/guard-2.6.1/lib/guard/guard.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/guard-2.6.1/lib/guard/guardfile.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/guard-2.6.1/lib/guard/guardfile/evaluator.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/guard-2.6.1/lib/guard/guardfile/generator.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/guard-2.6.1/lib/guard/interactor.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/guard-2.6.1/lib/guard/notifier.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/guard-2.6.1/lib/guard/notifiers/base.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/guard-2.6.1/lib/guard/notifiers/emacs.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/guard-2.6.1/lib/guard/notifiers/file_notifier.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/guard-2.6.1/lib/guard/notifiers/gntp.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/guard-2.6.1/lib/guard/notifiers/growl.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/guard-2.6.1/lib/guard/notifiers/growl_notify.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/guard-2.6.1/lib/guard/notifiers/libnotify.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/guard-2.6.1/lib/guard/notifiers/notifysend.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/guard-2.6.1/lib/guard/notifiers/rb_notifu.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/guard-2.6.1/lib/guard/notifiers/terminal_notifier.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/guard-2.6.1/lib/guard/notifiers/terminal_title.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/guard-2.6.1/lib/guard/notifiers/tmux.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/guard-2.6.1/lib/guard/options.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/guard-2.6.1/lib/guard/plugin.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/guard-2.6.1/lib/guard/plugin/base.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/guard-2.6.1/lib/guard/plugin/hooker.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/guard-2.6.1/lib/guard/plugin_util.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/guard-2.6.1/lib/guard/rake_task.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/guard-2.6.1/lib/guard/runner.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/guard-2.6.1/lib/guard/setuper.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/guard-2.6.1/lib/guard/templates/Guardfile
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/guard-2.6.1/lib/guard/ui.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/guard-2.6.1/lib/guard/ui/colors.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/guard-2.6.1/lib/guard/version.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/guard-2.6.1/lib/guard/watcher.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/guard-2.6.1/man/guard.1
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/guard-2.6.1/man/guard.1.html
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/guard-rspec-4.3.1/.gitignore
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/guard-rspec-4.3.1/.travis.yml
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/guard-rspec-4.3.1/CONTRIBUTING.md
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/guard-rspec-4.3.1/Gemfile
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/guard-rspec-4.3.1/Guardfile
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/guard-rspec-4.3.1/LICENSE.txt
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/guard-rspec-4.3.1/README.md
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/guard-rspec-4.3.1/Rakefile
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/guard-rspec-4.3.1/gemfiles/Gemfile.rspec-2.14
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/guard-rspec-4.3.1/gemfiles/Gemfile.rspec-3.0
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/guard-rspec-4.3.1/guard-rspec.gemspec
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/guard-rspec-4.3.1/lib/guard/rspec.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/guard-rspec-4.3.1/lib/guard/rspec/command.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/guard-rspec-4.3.1/lib/guard/rspec/deprecator.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/guard-rspec-4.3.1/lib/guard/rspec/formatter.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/guard-rspec-4.3.1/lib/guard/rspec/inspectors/base_inspector.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/guard-rspec-4.3.1/lib/guard/rspec/inspectors/factory.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/guard-rspec-4.3.1/lib/guard/rspec/inspectors/focused_inspector.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/guard-rspec-4.3.1/lib/guard/rspec/inspectors/keeping_inspector.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/guard-rspec-4.3.1/lib/guard/rspec/inspectors/simple_inspector.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/guard-rspec-4.3.1/lib/guard/rspec/notifier.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/guard-rspec-4.3.1/lib/guard/rspec/options.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/guard-rspec-4.3.1/lib/guard/rspec/runner.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/guard-rspec-4.3.1/lib/guard/rspec/templates/Guardfile
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/guard-rspec-4.3.1/lib/guard/rspec/version.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/guard-rspec-4.3.1/spec/lib/guard/rspec/command_spec.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/guard-rspec-4.3.1/spec/lib/guard/rspec/deprecator_spec.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/guard-rspec-4.3.1/spec/lib/guard/rspec/formatter_spec.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/guard-rspec-4.3.1/spec/lib/guard/rspec/inspectors/base_inspector_spec.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/guard-rspec-4.3.1/spec/lib/guard/rspec/inspectors/factory_spec.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/guard-rspec-4.3.1/spec/lib/guard/rspec/inspectors/focused_inspector_spec.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/guard-rspec-4.3.1/spec/lib/guard/rspec/inspectors/keeping_inspector_spec.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/guard-rspec-4.3.1/spec/lib/guard/rspec/inspectors/shared_examples.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/guard-rspec-4.3.1/spec/lib/guard/rspec/inspectors/simple_inspector_spec.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/guard-rspec-4.3.1/spec/lib/guard/rspec/notifier_spec.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/guard-rspec-4.3.1/spec/lib/guard/rspec/runner_spec.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/guard-rspec-4.3.1/spec/lib/guard/rspec_spec.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/guard-rspec-4.3.1/spec/spec_helper.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/listen-2.7.9/.gitignore
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/listen-2.7.9/.rspec
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/listen-2.7.9/.rubocop.yml
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/listen-2.7.9/.travis.yml
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/listen-2.7.9/.yardopts
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/listen-2.7.9/CHANGELOG.md
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/listen-2.7.9/CONTRIBUTING.md
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/listen-2.7.9/Gemfile
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/listen-2.7.9/Guardfile
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/listen-2.7.9/LICENSE.txt
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/listen-2.7.9/README.md
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/listen-2.7.9/Rakefile
+ create mode 100755 vendor/ruby/ruby/2.1.0/gems/listen-2.7.9/bin/listen
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/listen-2.7.9/lib/listen.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/listen-2.7.9/lib/listen/adapter.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/listen-2.7.9/lib/listen/adapter/base.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/listen-2.7.9/lib/listen/adapter/bsd.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/listen-2.7.9/lib/listen/adapter/darwin.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/listen-2.7.9/lib/listen/adapter/linux.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/listen-2.7.9/lib/listen/adapter/polling.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/listen-2.7.9/lib/listen/adapter/tcp.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/listen-2.7.9/lib/listen/adapter/windows.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/listen-2.7.9/lib/listen/change.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/listen-2.7.9/lib/listen/cli.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/listen-2.7.9/lib/listen/directory.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/listen-2.7.9/lib/listen/file.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/listen-2.7.9/lib/listen/listener.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/listen-2.7.9/lib/listen/options.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/listen-2.7.9/lib/listen/queue_optimizer.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/listen-2.7.9/lib/listen/record.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/listen-2.7.9/lib/listen/silencer.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/listen-2.7.9/lib/listen/tcp.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/listen-2.7.9/lib/listen/tcp/broadcaster.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/listen-2.7.9/lib/listen/tcp/message.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/listen-2.7.9/lib/listen/version.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/listen-2.7.9/listen.gemspec
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/listen-2.7.9/spec/acceptance/listen_spec.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/listen-2.7.9/spec/acceptance/tcp_spec.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/listen-2.7.9/spec/lib/listen/adapter/base_spec.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/listen-2.7.9/spec/lib/listen/adapter/bsd_spec.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/listen-2.7.9/spec/lib/listen/adapter/darwin_spec.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/listen-2.7.9/spec/lib/listen/adapter/linux_spec.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/listen-2.7.9/spec/lib/listen/adapter/polling_spec.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/listen-2.7.9/spec/lib/listen/adapter/tcp_spec.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/listen-2.7.9/spec/lib/listen/adapter/windows_spec.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/listen-2.7.9/spec/lib/listen/adapter_spec.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/listen-2.7.9/spec/lib/listen/change_spec.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/listen-2.7.9/spec/lib/listen/directory_spec.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/listen-2.7.9/spec/lib/listen/file_spec.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/listen-2.7.9/spec/lib/listen/listener_spec.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/listen-2.7.9/spec/lib/listen/record_spec.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/listen-2.7.9/spec/lib/listen/silencer_spec.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/listen-2.7.9/spec/lib/listen/tcp/broadcaster_spec.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/listen-2.7.9/spec/lib/listen/tcp/listener_spec.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/listen-2.7.9/spec/lib/listen/tcp/message_spec.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/listen-2.7.9/spec/lib/listen_spec.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/listen-2.7.9/spec/spec_helper.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/listen-2.7.9/spec/support/acceptance_helper.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/listen-2.7.9/spec/support/fixtures_helper.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/listen-2.7.9/spec/support/platform_helper.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/lumberjack-1.0.9/MIT_LICENSE
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/lumberjack-1.0.9/README.rdoc
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/lumberjack-1.0.9/Rakefile
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/lumberjack-1.0.9/VERSION
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/lumberjack-1.0.9/lib/lumberjack.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/lumberjack-1.0.9/lib/lumberjack/device.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/lumberjack-1.0.9/lib/lumberjack/device/date_rolling_log_file.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/lumberjack-1.0.9/lib/lumberjack/device/log_file.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/lumberjack-1.0.9/lib/lumberjack/device/null.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/lumberjack-1.0.9/lib/lumberjack/device/rolling_log_file.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/lumberjack-1.0.9/lib/lumberjack/device/size_rolling_log_file.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/lumberjack-1.0.9/lib/lumberjack/device/writer.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/lumberjack-1.0.9/lib/lumberjack/formatter.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/lumberjack-1.0.9/lib/lumberjack/formatter/exception_formatter.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/lumberjack-1.0.9/lib/lumberjack/formatter/inspect_formatter.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/lumberjack-1.0.9/lib/lumberjack/formatter/pretty_print_formatter.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/lumberjack-1.0.9/lib/lumberjack/formatter/string_formatter.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/lumberjack-1.0.9/lib/lumberjack/log_entry.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/lumberjack-1.0.9/lib/lumberjack/logger.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/lumberjack-1.0.9/lib/lumberjack/rack.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/lumberjack-1.0.9/lib/lumberjack/rack/unit_of_work.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/lumberjack-1.0.9/lib/lumberjack/severity.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/lumberjack-1.0.9/lib/lumberjack/template.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/lumberjack-1.0.9/spec/device/date_rolling_log_file_spec.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/lumberjack-1.0.9/spec/device/log_file_spec.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/lumberjack-1.0.9/spec/device/null_spec.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/lumberjack-1.0.9/spec/device/rolling_log_file_spec.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/lumberjack-1.0.9/spec/device/size_rolling_log_file_spec.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/lumberjack-1.0.9/spec/device/writer_spec.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/lumberjack-1.0.9/spec/formatter/exception_formatter_spec.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/lumberjack-1.0.9/spec/formatter/inspect_formatter_spec.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/lumberjack-1.0.9/spec/formatter/pretty_print_formatter_spec.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/lumberjack-1.0.9/spec/formatter/string_formatter_spec.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/lumberjack-1.0.9/spec/formatter_spec.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/lumberjack-1.0.9/spec/log_entry_spec.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/lumberjack-1.0.9/spec/logger_spec.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/lumberjack-1.0.9/spec/lumberjack_spec.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/lumberjack-1.0.9/spec/rack/unit_of_work_spec.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/lumberjack-1.0.9/spec/severity_spec.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/lumberjack-1.0.9/spec/spec_helper.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/lumberjack-1.0.9/spec/template_spec.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/method_source-0.8.2/.gemtest
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/method_source-0.8.2/.travis.yml
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/method_source-0.8.2/.yardopts
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/method_source-0.8.2/Gemfile
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/method_source-0.8.2/LICENSE
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/method_source-0.8.2/README.markdown
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/method_source-0.8.2/Rakefile
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/method_source-0.8.2/lib/method_source.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/method_source-0.8.2/lib/method_source/code_helpers.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/method_source-0.8.2/lib/method_source/source_location.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/method_source-0.8.2/lib/method_source/version.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/method_source-0.8.2/method_source.gemspec
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/method_source-0.8.2/test/test.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/method_source-0.8.2/test/test_code_helpers.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/method_source-0.8.2/test/test_helper.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/CHANGELOG.md
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/LICENSE
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/README.md
+ create mode 100755 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/bin/pry
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/cli.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/code.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/code/code_file.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/code/code_range.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/code/loc.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/code_object.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/color_printer.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/command.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/command_set.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/commands.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/commands/amend_line.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/commands/bang.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/commands/bang_pry.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/commands/cat.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/commands/cat/abstract_formatter.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/commands/cat/exception_formatter.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/commands/cat/file_formatter.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/commands/cat/input_expression_formatter.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/commands/cd.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/commands/change_inspector.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/commands/change_prompt.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/commands/code_collector.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/commands/disable_pry.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/commands/disabled_commands.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/commands/easter_eggs.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/commands/edit.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/commands/edit/exception_patcher.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/commands/edit/file_and_line_locator.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/commands/exit.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/commands/exit_all.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/commands/exit_program.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/commands/find_method.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/commands/fix_indent.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/commands/gem_cd.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/commands/gem_install.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/commands/gem_list.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/commands/gem_open.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/commands/gist.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/commands/help.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/commands/hist.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/commands/import_set.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/commands/install_command.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/commands/jump_to.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/commands/list_inspectors.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/commands/list_prompts.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/commands/ls.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/commands/ls/constants.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/commands/ls/formatter.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/commands/ls/globals.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/commands/ls/grep.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/commands/ls/instance_vars.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/commands/ls/interrogatable.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/commands/ls/jruby_hacks.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/commands/ls/local_names.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/commands/ls/local_vars.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/commands/ls/ls_entity.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/commands/ls/methods.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/commands/ls/methods_helper.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/commands/ls/self_methods.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/commands/nesting.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/commands/play.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/commands/pry_backtrace.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/commands/pry_version.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/commands/raise_up.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/commands/reload_code.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/commands/reset.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/commands/ri.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/commands/save_file.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/commands/shell_command.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/commands/shell_mode.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/commands/show_doc.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/commands/show_info.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/commands/show_input.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/commands/show_source.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/commands/simple_prompt.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/commands/stat.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/commands/switch_to.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/commands/toggle_color.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/commands/watch_expression.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/commands/watch_expression/expression.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/commands/whereami.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/commands/wtf.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/config.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/config/behavior.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/config/convenience.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/config/default.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/core_extensions.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/editor.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/exceptions.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/helpers.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/helpers/base_helpers.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/helpers/command_helpers.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/helpers/documentation_helpers.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/helpers/options_helpers.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/helpers/table.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/helpers/text.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/history.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/history_array.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/hooks.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/indent.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/input_completer.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/input_lock.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/inspector.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/last_exception.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/method.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/method/disowned.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/method/patcher.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/method/weird_method_locator.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/module_candidate.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/object_path.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/output.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/pager.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/plugins.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/prompt.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/pry_class.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/pry_instance.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/rbx_path.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/repl.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/repl_file_loader.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/rubygem.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/terminal.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/test/helper.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/version.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/pry-0.10.0/lib/pry/wrapped_module.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/rb-fsevent-0.9.4/.gitignore
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/rb-fsevent-0.9.4/Gemfile
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/rb-fsevent-0.9.4/Guardfile
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/rb-fsevent-0.9.4/LICENSE.txt
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/rb-fsevent-0.9.4/README.md
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/rb-fsevent-0.9.4/Rakefile
+ create mode 100755 vendor/ruby/ruby/2.1.0/gems/rb-fsevent-0.9.4/bin/fsevent_watch
+ create mode 100755 vendor/ruby/ruby/2.1.0/gems/rb-fsevent-0.9.4/bin/fsevent_watch_10_5
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/rb-fsevent-0.9.4/ext/LICENSE
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/rb-fsevent-0.9.4/ext/fsevent_watch/TSICTString.c
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/rb-fsevent-0.9.4/ext/fsevent_watch/TSICTString.h
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/rb-fsevent-0.9.4/ext/fsevent_watch/cli.c
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/rb-fsevent-0.9.4/ext/fsevent_watch/cli.h
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/rb-fsevent-0.9.4/ext/fsevent_watch/common.h
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/rb-fsevent-0.9.4/ext/fsevent_watch/compat.c
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/rb-fsevent-0.9.4/ext/fsevent_watch/compat.h
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/rb-fsevent-0.9.4/ext/fsevent_watch/defines.h
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/rb-fsevent-0.9.4/ext/fsevent_watch/main.c
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/rb-fsevent-0.9.4/ext/rakefile.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/rb-fsevent-0.9.4/lib/rb-fsevent.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/rb-fsevent-0.9.4/lib/rb-fsevent/fsevent.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/rb-fsevent-0.9.4/lib/rb-fsevent/version.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/rb-fsevent-0.9.4/rb-fsevent.gemspec
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/rb-fsevent-0.9.4/spec/fixtures/custom 'path/.gitignore
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/rb-fsevent-0.9.4/spec/fixtures/folder1/file1.txt
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/rb-fsevent-0.9.4/spec/fixtures/folder1/folder2/file2.txt
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/rb-fsevent-0.9.4/spec/rb-fsevent/fsevent_spec.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/rb-fsevent-0.9.4/spec/spec_helper.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/rb-inotify-0.9.5/.yardopts
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/rb-inotify-0.9.5/MIT-LICENSE
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/rb-inotify-0.9.5/README.md
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/rb-inotify-0.9.5/Rakefile
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/rb-inotify-0.9.5/VERSION
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/rb-inotify-0.9.5/lib/rb-inotify.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/rb-inotify-0.9.5/lib/rb-inotify/event.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/rb-inotify-0.9.5/lib/rb-inotify/native.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/rb-inotify-0.9.5/lib/rb-inotify/native/flags.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/rb-inotify-0.9.5/lib/rb-inotify/notifier.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/rb-inotify-0.9.5/lib/rb-inotify/watcher.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/rb-inotify-0.9.5/rb-inotify.gemspec
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/rspec-3.0.0/License.txt
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/rspec-3.0.0/README.md
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/rspec-3.0.0/lib/rspec.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/rspec-3.0.0/lib/rspec/version.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/slop-3.6.0/.gitignore
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/slop-3.6.0/.travis.yml
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/slop-3.6.0/CHANGES.md
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/slop-3.6.0/Gemfile
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/slop-3.6.0/LICENSE
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/slop-3.6.0/README.md
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/slop-3.6.0/Rakefile
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/slop-3.6.0/lib/slop.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/slop-3.6.0/lib/slop/commands.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/slop-3.6.0/lib/slop/option.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/slop-3.6.0/slop.gemspec
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/slop-3.6.0/test/commands_test.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/slop-3.6.0/test/helper.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/slop-3.6.0/test/option_test.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/slop-3.6.0/test/slop_test.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/timers-1.1.0/.gitignore
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/timers-1.1.0/.rspec
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/timers-1.1.0/.travis.yml
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/timers-1.1.0/CHANGES.md
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/timers-1.1.0/Gemfile
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/timers-1.1.0/LICENSE
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/timers-1.1.0/README.md
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/timers-1.1.0/Rakefile
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/timers-1.1.0/lib/timers.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/timers-1.1.0/lib/timers/version.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/timers-1.1.0/spec/spec_helper.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/timers-1.1.0/spec/timers_spec.rb
+ create mode 100644 vendor/ruby/ruby/2.1.0/gems/timers-1.1.0/timers.gemspec
+ create mode 100644 vendor/ruby/ruby/2.1.0/specifications/celluloid-0.15.2.gemspec
+ create mode 100644 vendor/ruby/ruby/2.1.0/specifications/formatador-0.2.5.gemspec
+ create mode 100644 vendor/ruby/ruby/2.1.0/specifications/guard-2.6.1.gemspec
+ create mode 100644 vendor/ruby/ruby/2.1.0/specifications/guard-rspec-4.3.1.gemspec
+ create mode 100644 vendor/ruby/ruby/2.1.0/specifications/listen-2.7.9.gemspec
+ create mode 100644 vendor/ruby/ruby/2.1.0/specifications/lumberjack-1.0.9.gemspec
+ create mode 100644 vendor/ruby/ruby/2.1.0/specifications/method_source-0.8.2.gemspec
+ create mode 100644 vendor/ruby/ruby/2.1.0/specifications/pry-0.10.0.gemspec
+ create mode 100644 vendor/ruby/ruby/2.1.0/specifications/rb-fsevent-0.9.4.gemspec
+ create mode 100644 vendor/ruby/ruby/2.1.0/specifications/rb-inotify-0.9.5.gemspec
+ create mode 100644 vendor/ruby/ruby/2.1.0/specifications/rspec-3.0.0.gemspec
+ create mode 100644 vendor/ruby/ruby/2.1.0/specifications/slop-3.6.0.gemspec
+ create mode 100644 vendor/ruby/ruby/2.1.0/specifications/timers-1.1.0.gemspec
+bash-3.2$ guard init
+19:40:41 - INFO - Writing new Guardfile to /Users/jordanrein/Jordan/hpfic/Guardfile
+19:40:41 - INFO - rspec guard added to Guardfile, feel free to edit it
+bash-3.2$ guard init[Kgit status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   .idea/workspace.xml[m
+	[31mmodified:   commands.txt[m
+	[31mmodified:   config/application.rb[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31mGuardfile[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+bash-3.2$ git add [K[K[K[Kadd -
