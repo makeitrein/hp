@@ -8321,4 +8321,115 @@ Untracked files:
 	[31mGuardfile[m
 
 no changes added to commit (use "git add" and/or "git commit -a")
-bash-3.2$ git add [K[K[K[Kadd -
+bash-3.2$ git add [K[K[K[Kadd -A
+bash-3.2$ gt[Kit commit -m "guard init plus some additions to config generators"
+[master bd31658] guard init plus some additions to config generators
+ 4 files changed, 717 insertions(+), 4 deletions(-)
+ create mode 100644 Guardfile
+bash-3.2$ rails g controller Home index
+[1m[32m      create[0m  app/controllers/home_controller.rb
+[1m[32m       route[0m  get 'home/index'
+[1m[37m      invoke[0m  erb
+[1m[32m      create[0m    app/views/home
+[1m[32m      create[0m    app/views/home/index.html.erb
+[1m[37m      invoke[0m  rspec
+[1m[32m      create[0m    spec/controllers/home_controller_spec.rb
+[1m[37m      invoke[0m  helper
+[1m[32m      create[0m    app/helpers/home_helper.rb
+[1m[37m      invoke[0m    rspec
+[1m[37m      invoke[0m  assets
+[1m[37m      invoke[0m    coffee
+[1m[32m      create[0m      app/assets/javascripts/home.js.coffee
+[1m[37m      invoke[0m    scss
+[1m[32m      create[0m      app/assets/stylesheets/home.css.scss
+bash-3.2$ rake routes
+                  Prefix Verb   URI Pattern                    Controller#Action
+                    root GET    /                              home#index
+        new_user_session GET    /users/sign_in(.:format)       devise/sessions#new
+            user_session POST   /users/sign_in(.:format)       devise/sessions#create
+    destroy_user_session DELETE /users/sign_out(.:format)      devise/sessions#destroy
+           user_password POST   /users/password(.:format)      devise/passwords#create
+       new_user_password GET    /users/password/new(.:format)  devise/passwords#new
+      edit_user_password GET    /users/password/edit(.:format) devise/passwords#edit
+                         PATCH  /users/password(.:format)      devise/passwords#update
+                         PUT    /users/password(.:format)      devise/passwords#update
+cancel_user_registration GET    /users/cancel(.:format)        devise/registrations#cancel
+       user_registration POST   /users(.:format)               devise/registrations#create
+   new_user_registration GET    /users/sign_up(.:format)       devise/registrations#new
+  edit_user_registration GET    /users/edit(.:format)          devise/registrations#edit
+                         PATCH  /users(.:format)               devise/registrations#update
+                         PUT    /users(.:format)               devise/registrations#update
+                         DELETE /users(.:format)               devise/registrations#destroy
+bash-3.2$ vim spec/sup[K[K[K[K[K[K[K[K[K[K[K[Kvim spec/supo[Kport/capybara.rb
+[?1049h[?1h=[1;38r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[38;1H"spec/support/capybara.rb" [New DIRECTORY][>c[2;1H[1m[34m~                                                                               [3;1H~                                                                               [4;1H~                                                                               [5;1H~                                                                               [6;1H~                                                                               [7;1H~                                                                               [8;1H~                                                                               [9;1H~                                                                               [10;1H~                                                                               [11;1H~                                                                               [12;1H~                                                                               [13;1H~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [24;1H~                                                                               [25;1H~                                                                               [26;1H~                                                                               [27;1H~                                                                               [28;1H~                                                                               [29;1H~                                                                               [30;1H~                                                                               [31;1H~                                                                               [32;1H~                                                                               [33;1H~                                                                               [34;1H~                                                                               [35;1H~                                                                               [36;1H~                                                                               [37;1H~                                                                               [1;1H[?12l[?25h[?25l[m[38;1H[1m-- INSERT --[m[38;13H[K[1;1H[?12l[?25h[?25lCapybara.asset_host = 'http://localhost:3000'[2;1H[K[2;1H[?12l[?25h[38;1H[K[2;1H[?25l[?12l[?25h[?25l[38;1H:[?12l[?25hwq[?25l"spec/support/capybara.rb"
+[1m[37m[41m"spec/support/capybara.rb" E212: Can't open file for writing[m
+[32mPress ENTER or type command to continue[?12l[?25h[m[1;1H[2L[?25l[1;1HCapybara.asset_host = 'http://localhost:3000'[38;1H[K[2;1H[?12l[?25h[?25l[38;1H:[?12l[?25hq[?25l[1m[37m[41mE37: No write since last change (add ! to override)[2;1H[?12l[?25h[?25l[m[38;1H[K[38;1H:[?12l[?25h!q[?25l:!q[?1l>[?12l[?25h[?1049l
+[No write since last change]
+/bin/bash: q: command not found
+
+shell returned 127
+
+Press ENTER or type command to continue[?1049h[?1h=[27m[m[H[2J[?25l[1;1HCapybara.asset_host = 'http://localhost:3000'
+
+[1m[34m~                                                                               [4;1H~                                                                               [5;1H~                                                                               [6;1H~                                                                               [7;1H~                                                                               [8;1H~                                                                               [9;1H~                                                                               [10;1H~                                                                               [11;1H~                                                                               [12;1H~                                                                               [13;1H~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [24;1H~                                                                               [25;1H~                                                                               [26;1H~                                                                               [27;1H~                                                                               [28;1H~                                                                               [29;1H~                                                                               [30;1H~                                                                               [31;1H~                                                                               [32;1H~                                                                               [33;1H~                                                                               [34;1H~                                                                               [35;1H~                                                                               [36;1H~                                                                               [37;1H~                                                                               [2;1H[?12l[?25h[?25l[?12l[?25h[?25l[38;1H[m:[?12l[?25hq![?25l[?1l>[?12l[?25h[?1049l
+bash-3.2$ mkdir spec/support
+bash-3.2$ vim spec/sumkdir spec/support[C[C[C[C[C[C[C[C[C[Cvim spec/support/capybara.rb
+[?1049h[?1h=[1;38r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[38;1H"spec/support/capybara.rb" [New File][>c[2;1H[1m[34m~                                                                               [3;1H~                                                                               [4;1H~                                                                               [5;1H~                                                                               [6;1H~                                                                               [7;1H~                                                                               [8;1H~                                                                               [9;1H~                                                                               [10;1H~                                                                               [11;1H~                                                                               [12;1H~                                                                               [13;1H~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [24;1H~                                                                               [25;1H~                                                                               [26;1H~                                                                               [27;1H~                                                                               [28;1H~                                                                               [29;1H~                                                                               [30;1H~                                                                               [31;1H~                                                                               [32;1H~                                                                               [33;1H~                                                                               [34;1H~                                                                               [35;1H~                                                                               [36;1H~                                                                               [37;1H~                                                                               [1;1H[?12l[?25h[?25l[m[38;1H[1m-- INSERT --[m[38;13H[K[1;1Hapybara.asset_host = 'http://localhost:3000'[2;1H[K[2;1H[?12l[?25h[1;1H[?25lCapybara.asset_host = 'http://localhost:3000'C[?12l[?25h[38;1H[K[1;1H[?25l[?12l[?25h[?25l[38;1H:[?12l[?25hwq[?25l"spec/support/capybara.rb" [New] 2L, 47C written
+[?1l>[?12l[?25h[?1049lbash-3.2$ rails g controller users index show put[K[K[Kcre[K[K[K[K[K[K[K[Kcreate new delete show
+[1m[32m      create[0m  app/controllers/users_controller.rb
+[1m[32m       route[0m  get 'users/show'
+[1m[32m       route[0m  get 'users/delete'
+[1m[32m       route[0m  get 'users/new'
+[1m[32m       route[0m  get 'users/create'
+[1m[32m       route[0m  get 'users/index'
+[1m[37m      invoke[0m  erb
+[1m[32m      create[0m    app/views/users
+[1m[32m      create[0m    app/views/users/index.html.erb
+[1m[32m      create[0m    app/views/users/create.html.erb
+[1m[32m      create[0m    app/views/users/new.html.erb
+[1m[32m      create[0m    app/views/users/delete.html.erb
+[1m[32m      create[0m    app/views/users/show.html.erb
+[1m[37m      invoke[0m  rspec
+[1m[37m      invoke[0m  helper
+[1m[32m      create[0m    app/helpers/users_helper.rb
+[1m[37m      invoke[0m    rspec
+[1m[37m      invoke[0m  assets
+[1m[37m      invoke[0m    coffee
+[1m[32m      create[0m      app/assets/javascripts/users.js.coffee
+[1m[37m      invoke[0m    scss
+[1m[32m      create[0m      app/assets/stylesheets/users.css.scss
+bash-3.2$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   .idea/dataSources.xml[m
+	[31mmodified:   .idea/workspace.xml[m
+	[31mmodified:   app/views/layouts/_navigation_links.html.erb[m
+	[31mmodified:   app/views/layouts/application.html.erb[m
+	[31mmodified:   commands.txt[m
+	[31mmodified:   config/application.rb[m
+	[31mmodified:   config/routes.rb[m
+	[31mmodified:   spec/features/home_spec.rb[m
+	[31mmodified:   spec/models/user_spec.rb[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31m.idea/runConfigurations/[m
+	[31mapp/assets/javascripts/home.js.coffee[m
+	[31mapp/assets/javascripts/users.js.coffee[m
+	[31mapp/assets/stylesheets/home.css.scss[m
+	[31mapp/assets/stylesheets/users.css.scss[m
+	[31mapp/controllers/home_controller.rb[m
+	[31mapp/controllers/users_controller.rb[m
+	[31mapp/helpers/home_helper.rb[m
+	[31mapp/helpers/users_helper.rb[m
+	[31mapp/views/home/[m
+	[31mapp/views/users/[m
+	[31mspec/controllers/[m
+	[31mspec/support/[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+bash-3.2$ git commit -am "generated users conto[K[K[K[K
