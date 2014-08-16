@@ -11,30 +11,23 @@
   <link href='http://fonts.googleapis.com/css?family=Oswald|Open+Sans' rel='stylesheet' type='text/css'>  <%= csrf_meta_tags %>
 </head>
 <body>
-<div class="row content">
-  <div class="small-12 columns">
-
-    <div class="row header">
-      <div class="small-12 columns">
-        <h1><%= link_to "HPFic", root_path %><a data-tooltip class="has-tip [tip-right]"
-             title="Welcome to HPFic, a better way to rate and review Harry Potter Fanfiction.">*</a>
-        </h1>
-      </div>
-    </div>
-
-        <%= render 'layouts/navigation' %>
 
 
-    <div class="row">
-      <div class="small-12 columns">
-        <%= render 'layouts/messages' %>
-        <%= yield %>
-      </div>
-    </div>
+<%= render 'refills/navigation' %>
+
+<%= render 'refills/search_tools' %>
+
+<%= render 'layouts/messages' %>
+
+<%= render 'refills/comments' %>
 
 
 
-  </div>
-</div>
+
+<%= render 'refills/pagination' %>
+
+
+
+
 </body>
 </html>

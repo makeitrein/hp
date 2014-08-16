@@ -12,11 +12,13 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 
-gem 'foundation-rails'
 gem 'simple_form'
 gem 'devise'
 gem 'pundit'
 gem 'acts_as_taggable_on'
+gem 'neat'
+gem 'bourbon'
+gem 'bitters'
 
 group :development, :test do
   gem 'rspec-rails'
