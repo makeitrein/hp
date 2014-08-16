@@ -11,23 +11,30 @@
   <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>  <%= csrf_meta_tags %>
 </head>
 <body>
+<div class="row content">
+  <div class="small-12 columns">
 
-<div class="row header">
-  <div class="small-12">
-    <h1>HPFic</h1>
+    <div class="row header">
+      <div class="small-12">
+        <h1>HPFic<%= link_to "*", "/about" %></h1>
+      </div>
+    </div>
+
+        <%= render 'layouts/navigation' %>
+
+
+    <div class="row">
+      <div class="small-12 columns">
+        <%= render 'layouts/breadcrumbs' %>
+      </div>
+    </div>
+
+
+    <main role="main">
+      <%= render 'layouts/messages' %>
+      <%= yield %>
+    </main>
   </div>
 </div>
-
-<div class="row">
-  <div class="small-12">
-    <%= render 'layouts/navigation' %>
-  </div>
-</div>
-
-
-<main role="main">
-  <%= render 'layouts/messages' %>
-  <%= yield %>
-</main>
 </body>
 </html>
