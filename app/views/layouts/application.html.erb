@@ -15,7 +15,7 @@
 
 <%= render 'refills/navigation' %>
 
-<%= render 'refills/search_tools' %>
+<%#= render 'refills/search_tools' %>
 
 <%= render 'layouts/messages' %>
 
@@ -24,14 +24,13 @@
 <!--</nav>-->
 
 <main>
-  <% 10.times do %>
-    <%= render 'refills/comments' %>
-  <% end %>
+  <%= yield %>
 </main>
 
 
 <footer>
-  <%= render 'refills/pagination' %>
+  <%= render 'refills/footer' %>
+
 </footer>
 
 

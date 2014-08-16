@@ -5,12 +5,6 @@
   $pagination-hover-background: lighten($pagination-background, 5);
   $pagination-color: $base-font-color;
 
-  position: absolute;
-  bottom: 20px;
-  left: 0;
-  right: 0;
-  text-align: center;
-
   ul {
     display: inline;
     text-align: center;
