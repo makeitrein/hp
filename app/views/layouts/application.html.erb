@@ -19,14 +19,20 @@
 
 <%= render 'layouts/messages' %>
 
-<%= render 'refills/comments' %>
+<!--<nav class="secondary">-->
+<!--<%#= render 'refills/button_group' %>-->
+<!--</nav>-->
+
+<main>
+  <% 10.times do %>
+    <%= render 'refills/comments' %>
+  <% end %>
+</main>
 
 
-
-
-<%= render 'refills/pagination' %>
-
-
+<footer>
+  <%= render 'refills/pagination' %>
+</footer>
 
 
 </body>

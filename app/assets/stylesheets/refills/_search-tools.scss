@@ -2,6 +2,10 @@
   $search-tools-border-color: $base-border-color;
   $search-tools-background: lighten($search-tools-border-color, 10);
 
+  .search-tools-wrapper {
+    @include outer-container;
+  }
+
   @include clearfix;
   border: 1px solid $search-tools-border-color;
   background: $search-tools-background;

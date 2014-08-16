@@ -19,6 +19,7 @@ gem 'acts_as_taggable_on'
 gem 'neat'
 gem 'bourbon'
 gem 'bitters'
+gem 'font-awesome-rails'
 
 group :development, :test do
   gem 'rspec-rails'

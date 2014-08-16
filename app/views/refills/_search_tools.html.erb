@@ -1,65 +1,69 @@
-
 <div class="search-tools">
-  <div class="filter">
-    <label>Colors</label>
-    <div>
-      <ol>
-        <li>
-          <input id="red" type="checkbox">
-          <label for="red">Red</label>
-        </li>
-        <li>
-          <input id="green" type="checkbox">
-          <label for="green">Green</label>
-        </li>
-        <li>
-          <input id="blue" type="checkbox">
-          <label for="blue">Blue</label>
-        </li>
-      </ol>
+  <div class="search-tools-wrapper">
+    <div class="filter">
+      <label>Colors</label>
+
+      <div>
+        <ol>
+          <li>
+            <input id="red" type="checkbox">
+            <label for="red">Red</label>
+          </li>
+          <li>
+            <input id="green" type="checkbox">
+            <label for="green">Green</label>
+          </li>
+          <li>
+            <input id="blue" type="checkbox">
+            <label for="blue">Blue</label>
+          </li>
+        </ol>
+      </div>
     </div>
-  </div>
-  <div class="filter">
-    <label>Sizes</label>
-    <div>
-      <ol>
-        <li>
-          <input id="small" type="checkbox">
-          <label for="small">Small</label>
-        </li>
-        <li>
-          <input id="medium" type="checkbox">
-          <label for="medium">Medium</label>
-        </li>
-        <li>
-          <input id="large" type="checkbox">
-          <label for="large">Large</label>
-        </li>
-      </ol>
+    <div class="filter">
+      <label>Sizes</label>
+
+      <div>
+        <ol>
+          <li>
+            <input id="small" type="checkbox">
+            <label for="small">Small</label>
+          </li>
+          <li>
+            <input id="medium" type="checkbox">
+            <label for="medium">Medium</label>
+          </li>
+          <li>
+            <input id="large" type="checkbox">
+            <label for="large">Large</label>
+          </li>
+        </ol>
+      </div>
     </div>
-  </div>
-  <div class="filter">
-    <label>Lengths</label>
-    <div>
-      <ol>
-        <li>
-          <input id="short" type="checkbox">
-          <label for="short">Short</label>
-        </li>
-        <li>
-          <input id="long" type="checkbox">
-          <label for="long">Long</label>
-        </li>
-      </ol>
+    <div class="filter">
+      <label>Lengths</label>
+
+      <div>
+        <ol>
+          <li>
+            <input id="short" type="checkbox">
+            <label for="short">Short</label>
+          </li>
+          <li>
+            <input id="long" type="checkbox">
+            <label for="long">Long</label>
+          </li>
+        </ol>
+      </div>
     </div>
-  </div>
-  <div class="trigger">
-    <button>Update</button>
+    <div class="trigger">
+      <button>Update</button>
+    </div>
   </div>
 </div>
 
 <script>
-  var Filter = (function() {
+  var Filter = (function () {
     function Filter(element) {
       this._element = $(element);
       this._optionsContainer = this._element.find(this.constructor.optionsContainerSelector);
@@ -69,20 +73,20 @@
     Filter.optionsContainerSelector = '> div';
     Filter.hideOptionsClass = 'hide-options';
 
-    Filter.enhance = function() {
+    Filter.enhance = function () {
       var klass = this;
 
-      return $(klass.selector).each(function() {
+      return $(klass.selector).each(function () {
         return new klass(this).enhance();
       });
     };
 
-    Filter.prototype.enhance = function() {
+    Filter.prototype.enhance = function () {
       this._buildUI();
       this._bindEvents();
     };
 
-    Filter.prototype._buildUI = function() {
+    Filter.prototype._buildUI = function () {
       this._summaryElement = $('<label></label>').
           addClass('summary').
           attr('data-role', 'summary').
@@ -97,22 +101,22 @@
       this._updateSummary();
     };
 
-    Filter.prototype._bindEvents = function() {
+    Filter.prototype._bindEvents = function () {
       var self = this;
 
-      this._summaryElement.click(function() {
+      this._summaryElement.click(function () {
         self._toggleOptions();
       });
 
-      this._clearSelectionButton.click(function() {
+      this._clearSelectionButton.click(function () {
         self._clearSelection();
       });
 
-      this._checkboxes().change(function() {
+      this._checkboxes().change(function () {
         self._updateSummary();
       });
 
-      $('body').click(function(e) {
+      $('body').click(function (e) {
         var inFilter = $(e.target).closest(self.constructor.selector).length > 0;
 
         if (!inFilter) {
@@ -121,7 +125,7 @@
       });
     };
 
-    Filter.prototype._toggleOptions = function() {
+    Filter.prototype._toggleOptions = function () {
       this._allOptionsContainers().
           not(this._optionsContainer).
           addClass(this.constructor.hideOptionsClass);
@@ -129,7 +133,7 @@
       this._optionsContainer.toggleClass(this.constructor.hideOptionsClass);
     };
 
-    Filter.prototype._updateSummary = function() {
+    Filter.prototype._updateSummary = function () {
       var summary = 'All';
       var checked = this._checkboxes().filter(':checked');
 
@@ -140,33 +144,33 @@
       this._summaryElement.text(summary);
     };
 
-    Filter.prototype._clearSelection = function() {
-      this._checkboxes().each(function() {
+    Filter.prototype._clearSelection = function () {
+      this._checkboxes().each(function () {
         $(this).prop('checked', false);
       });
 
       this._updateSummary();
     };
 
-    Filter.prototype._checkboxes = function() {
+    Filter.prototype._checkboxes = function () {
       return this._element.find(':checkbox');
     };
 
-    Filter.prototype._labelsFor = function(inputs) {
-      return inputs.map(function() {
+    Filter.prototype._labelsFor = function (inputs) {
+      return inputs.map(function () {
         var id = $(this).attr('id');
         return $("label[for='" + id + "']").text();
       }).get();
     };
 
-    Filter.prototype._allOptionsContainers = function() {
+    Filter.prototype._allOptionsContainers = function () {
       return $(this.constructor.selector + " " + this.constructor.optionsContainerSelector);
     };
 
     return Filter;
   })();
 
-  $(function() {
+  $(function () {
     Filter.enhance();
   });
 
