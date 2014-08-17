@@ -13,3 +13,25 @@
   }
 
 }
+
+.home-feed {
+  @include outer-container;
+}
+
+.home-reviews {
+  @include span-columns(5);
+
+  .card {
+    width: 100%;
+  }
+
+}
+
+.home-comments {
+  @include span-columns(7);
+//  @include shift(1);
+}
+
+.home-title {
+  margin-bottom: .5em;
+}

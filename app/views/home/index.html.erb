@@ -1,9 +1,23 @@
-
 <div class="home">
   <%= render 'layouts/welcome' %>
 
   <%= render 'refills/vertical_tabs' %>
 
-  <%= render 'refills/accordian_tabs' %>
+
+  <div class="home-feed">
+    <div class="home-reviews">
+      <h2 class="home-title">Trending Fanfics</h2>
+      <% 10.times do %>
+        <%= render 'refills/card' %>
+      <% end %>
+    </div>
+
+    <div class="home-comments">
+      <h2 class="home-title">Trending Reviews</h2>
+      <% 10.times do %>
+        <%= render 'refills/comments' %>
+      <% end %>
+    </div>
+  </div>
 
 </div>
