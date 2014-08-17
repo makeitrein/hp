@@ -8,3 +8,46 @@ body {
 main {
   @include outer-container;
 }
+
+.home-welcome {
+  font: 800 64px/64px "Open Sans";
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.home-italic {
+  font: 400 60px/60px "gentium book basic";
+  font-style: italic;
+}
+
+.kern {
+  margin: 0 4px 0 -10px;
+}
+
+.fanfic.card {
+  margin: 1em 0;
+}
+
+form.review-form {
+  width: 66%;
+  float: right;
+  background-color: #f7f7f7;
+  border-radius: 0.1875em;
+  border: 1px solid #dddddd;
+  cursor: pointer;
+  box-shadow: 0 2px 4px #e6e6e6;
+  padding: 0.75em 0.809em;
+  font-size: .9em;
+  line-height: 1.5em;
+  margin: 1em 0;
+
+}
+
+input.title {
+}
+
+.rating {
+  display: inline-block;
+  font-size: 1.5em;
+  margin-bottom: .1em;
+}

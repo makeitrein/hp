@@ -1,2 +1,16 @@
-<h1>Reviews#show</h1>
-<p>Find me in app/views/reviews/show.html.erb</p>
+<%= render 'refills/card' %>
+
+<form class="review-form">
+  <span class="comment-stars rating">
+    <% 10.times do %>
+    <i class="fa fa-star"></i>
+      <% end %>
+    </span>
+  <input type="text" name="title" class="title" placeholder="Headline for your review">
+  <textarea name="review" class="review"></textarea>
+
+</form>
+
+<% 10.times do %>
+<%= render 'refills/comments' %>
+<% end %>
