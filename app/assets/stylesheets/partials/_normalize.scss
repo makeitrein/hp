@@ -40,14 +40,17 @@ form.review-form {
   font-size: .9em;
   line-height: 1.5em;
   margin: 1em 0;
-
 }
 
 input.title {
 }
 
-.rating {
+textarea.review {
+  height: 100px;
+}
+
+span.rating {
   display: inline-block;
   font-size: 1.5em;
-  margin-bottom: .1em;
+  margin-bottom: .2em;
 }
