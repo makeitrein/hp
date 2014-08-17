@@ -1,3 +1,15 @@
 .home {
   margin: 2em 0;
 }
+
+.welcome {
+//  background: #f7f7f7;
+//  clear: both;
+//  border: 1px solid #ddd;
+//  font-weight: 800;
+  @include flash($notice-color);
+  .welcome-wrapper {
+    @include outer-container;
+  }
+
+}
