@@ -19,7 +19,11 @@
 }
 
 .home-reviews {
-  @include span-columns(5);
+  @include span-columns(6);
+  border: 1px solid #ddd;
+  padding: 2em;
+
+
 
   .card {
     width: 100%;
@@ -28,8 +32,18 @@
 }
 
 .home-comments {
-  @include span-columns(7);
-//  @include shift(1);
+  @include span-columns(6);
+  border: 1px solid #ddd;
+  padding: 2em;
+  //  @include shift(1);
+
+  .comment-stars {
+    display: block;
+  }
+
+  .comment-bar {
+    display: none;
+  }
 }
 
 .home-title {
