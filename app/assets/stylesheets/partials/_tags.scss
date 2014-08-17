@@ -7,9 +7,15 @@
   font-weight: 700;
   margin: .25em;
   font-size: .75em;
-  color: #477dca;
+  //color: #477dca;
+  color: #CA4747;
   transition: .5s all;
   background: #fff;
+
+  &.slash, .nsfw {
+    color: darkred;
+  }
+
   &:hover {
     background: #fff;
   }
