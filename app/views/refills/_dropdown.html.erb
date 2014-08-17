@@ -1,0 +1,23 @@
+<div class="dropdown">
+  <div class="dropdown-container">
+    <p class="dropdown-description">Sort Reviews</p>
+    <p class="dropdown-button">Newest</p>
+    <ul class="menu">
+      <li>Newest</li>
+      <li>Oldest</li>
+      <li>Popular</li>
+    </ul>
+  </div>
+</div>
+
+<script>
+  $(document).ready(function(){
+    $(".dropdown-button").click(function(){
+      $(".menu").toggleClass("show-menu");
+      $(".menu > li").click(function(){
+        $(".dropdown-button").html($(this).html());
+        $(".menu").removeClass("show-menu");
+      });
+    });
+  });
+</script>
