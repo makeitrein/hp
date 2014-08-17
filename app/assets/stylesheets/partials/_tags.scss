@@ -8,17 +8,13 @@
   margin: .25em;
   font-size: .75em;
   //color: #477dca;
-  color: #CA4747;
+  color: #fff;
   transition: .5s all;
-  background: #fff;
+  background: #CA4747;
 
-  &.slash, .nsfw {
-    color: darkred;
-  }
-
-  &:hover {
-    background: #fff;
-  }
+//  &.slash, .nsfw {
+//    background: darkred;
+//  }
 }
 
 .card-tags {
@@ -27,6 +23,8 @@
 
 .tags .tag {
   line-height: 1.5em;
-  background: #f5f5f5;
   font-size: 1em;
+  margin: 1em;
+  background: #f7f7f7;
+  color: #CA4747;
 }
