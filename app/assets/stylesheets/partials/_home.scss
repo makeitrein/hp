@@ -2,6 +2,10 @@
   margin: 2em 0;
 }
 
+.notice {
+  @include flash($notice-color);
+}
+
 .welcome {
 //  background: #f7f7f7;
 //  clear: both;
@@ -18,23 +22,33 @@
   @include outer-container;
 }
 
-.home-reviews {
+.home-reviews-wrapper {
   @include span-columns(6);
   border: 1px solid #ddd;
-  padding: 2em;
+}
 
+.home-comments-wrapper {
+  @include span-columns(6);
+  border: 1px solid #ddd;
+}
+
+
+.home-reviews {
+  padding: 1em 2em;
 
 
   .card {
     width: 100%;
+    float: none;
+    &:first-child {
+      margin-top: 1em;
+    }
   }
 
 }
 
 .home-comments {
-  @include span-columns(6);
-  border: 1px solid #ddd;
-  padding: 2em;
+  padding: 1em 2em;
   //  @include shift(1);
 
   .comment-stars {
@@ -47,9 +61,13 @@
 }
 
 .home-title {
-  margin-bottom: .5em;
-}
+  border-bottom: 1px solid #ddd;
+  padding: .75em 1em;
+  }
 
 .home-button {
-  font-size: .35em;
+  font-size: .5em;
+  line-height: 1em;
+  display: inline-block;
+  float: right;
 }
