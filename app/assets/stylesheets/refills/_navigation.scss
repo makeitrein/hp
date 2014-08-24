@@ -279,6 +279,10 @@ header.navigation {
     &:hover {
       background: lighten($navigation-nav-button-background, 10);
     }
+
+    + .sign-up {
+      margin-right: .6em;
+    }
   }
 
   // Search bar
