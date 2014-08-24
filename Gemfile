@@ -15,7 +15,6 @@ gem 'spring',        group: :development
 gem 'simple_form'
 gem 'devise'
 gem 'pundit'
-gem 'acts_as_taggable_on'
 gem 'neat'
 gem 'bourbon'
 gem 'bitters'
