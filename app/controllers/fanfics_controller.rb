@@ -13,4 +13,15 @@ class FanficsController < ApplicationController
 
   def show
   end
+
+  private
+    def fanfic_params
+      params.require(:fanfic).permit(:title,
+                                     :author,
+                                     :description,
+                                     :word_count,
+                                     :published,
+                                     :updated
+      )
+    end
 end
