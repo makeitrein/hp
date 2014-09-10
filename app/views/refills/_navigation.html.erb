@@ -4,6 +4,7 @@
       <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png" alt="">
     <% end %>
     <a href="" class="navigation-menu-button" id="js-mobile-menu">MENU</a>
+
     <div class="nav">
       <ul id="navigation-menu">
         <li class="nav-link"><%= link_to "Reviews", reviews_path %></li>
@@ -15,14 +16,20 @@
     <div class="navigation-tools">
       <div class="search-bar">
         <div class="search-and-submit">
-          <input type="search" placeholder="Enter Search" />
+          <input type="search" placeholder="Enter Search"/>
           <button type="submit">
             <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/search-icon.png" alt="">
           </button>
         </div>
       </div>
-      <%= link_to "Login", new_user_session_path, class: "sign-up" %>
-      <%= link_to "Sign Up", new_user_registration_path, class: "sign-up" %>
+      <% if !user_signed_in?  %>
+        <%= link_to "Login", new_user_session_path, class: "sign-up" %>
+        <%= link_to "Sign Up", new_user_registration_path, class: "sign-up" %>
+      <% else %>
+        <%= link_to "Sign Out", destroy_user_session_path, class: "sign-up", method: "delete" %>
+        <%= link_to "Profile", user_path(current_user), class: "sign-up" %>
+      <% end %>
+
 
     </div>
   </div>
@@ -30,23 +37,23 @@
 
 
 <script>
-  $(document).ready(function() {
+  $(document).ready(function () {
     var menu = $('#navigation-menu');
     var menuToggle = $('#js-mobile-menu');
     var signUp = $('.sign-up');
 
-    $(menuToggle).on('click', function(e) {
+    $(menuToggle).on('click', function (e) {
       e.preventDefault();
-      menu.slideToggle(function(){
-        if(menu.is(':hidden')) {
+      menu.slideToggle(function () {
+        if (menu.is(':hidden')) {
           menu.removeAttr('style');
         }
       });
     });
 
     // underline under the active nav item
-    $(".nav .nav-link").click(function() {
-      $(".nav .nav-link").each(function() {
+    $(".nav .nav-link").click(function () {
+      $(".nav .nav-link").each(function () {
         $(this).removeClass("active-nav-item");
       });
       $(this).addClass("active-nav-item");

@@ -7,7 +7,7 @@ class CreateFanfics < ActiveRecord::Migration
       t.integer :word_count
       t.datetime :published
       t.datetime :updated
-      t.reference :user
+      t.references :user
       t.integer :status
 
       t.timestamps

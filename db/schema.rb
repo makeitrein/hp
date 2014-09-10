@@ -11,7 +11,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140824005824) do
+ActiveRecord::Schema.define(version: 20140824201309) do
+
+  create_table "fanfics", force: true do |t|
+    t.string   "title"
+    t.string   "author"
+    t.text     "description"
+    t.integer  "word_count"
+    t.datetime "published"
+    t.datetime "updated"
+    t.integer  "user_id"
+    t.integer  "status"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", force: true do |t|
     t.datetime "created_at"
