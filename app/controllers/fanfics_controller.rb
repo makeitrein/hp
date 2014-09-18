@@ -6,6 +6,7 @@ class FanficsController < ApplicationController
   end
 
   def new
+    @fanfic = Fanfic.new
   end
 
   def delete
