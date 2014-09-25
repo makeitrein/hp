@@ -1,73 +1,8 @@
 .home {
-  margin: 1em 0;
-}
-
-.notice {
-  @include flash($notice-color);
-}
-
-.welcome {
-//  background: #f7f7f7;
-//  clear: both;
-//  border: 1px solid #ddd;
-//  font-weight: 800;
-  @include flash($notice-color);
-  .welcome-wrapper {
-    @include outer-container;
-  }
+  @include outer-container();
+  margin: 1em auto;
 
 }
 
-.home-feed {
-  @include outer-container;
-}
-
-.home-reviews-wrapper {
-  @include span-columns(6);
-  border: 1px solid #ddd;
-}
-
-.home-comments-wrapper {
-  @include span-columns(6);
-  border: 1px solid #ddd;
-}
 
 
-.home-reviews {
-  padding: 0em 1em;
-
-
-  .card {
-    width: 100%;
-    float: none;
-    &:first-child {
-      margin-top: 1em;
-    }
-  }
-
-}
-
-.home-comments {
-  padding: 0em 1em;
-  //  @include shift(1);
-
-  .comment-stars {
-    display: block;
-  }
-
-  .comment-bar {
-    display: none;
-  }
-}
-
-.home-title {
-  border-bottom: 1px solid #ddd;
-  padding: .75em 1em;
-  }
-
-.home-button {
-  font-size: .5em;
-  line-height: 1em;
-  display: inline-block;
-  float: right;
-}

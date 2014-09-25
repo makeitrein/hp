@@ -1,0 +1,10 @@
+.notice {
+  @include flash($notice-color);
+}
+
+.welcome {
+  @include flash($notice-color);
+  .welcome-wrapper {
+    @include outer-container;
+  }
+}
