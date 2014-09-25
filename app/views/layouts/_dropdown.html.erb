@@ -1,20 +1,21 @@
 <div class="dropdown">
   <div class="dropdown-container">
-    <p class="dropdown-description">Sort Reviews</p>
-    <p class="dropdown-button">Newest</p>
+    <p class="dropdown-description"><%= description %></p>
+
+    <p class="dropdown-button"><%= button %></p>
     <ul class="menu">
-      <li>Newest</li>
-      <li>Oldest</li>
-      <li>Popular</li>
+      <% options.each do |option| %>
+        <li><%= option %></li>
+      <% end %>
     </ul>
   </div>
 </div>
 
 <script>
-  $(document).ready(function(){
-    $(".dropdown-button").click(function(){
+  $(document).ready(function () {
+    $(".dropdown-button").click(function () {
       $(".menu").toggleClass("show-menu");
-      $(".menu > li").click(function(){
+      $(".menu > li").click(function () {
         $(".dropdown-button").html($(this).html());
         $(".menu").removeClass("show-menu");
       });

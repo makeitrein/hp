@@ -1,4 +1,11 @@
 <div class="home">
+
+  <%= render 'layouts/search_tools' %>
+
+  <%= render 'layouts/dropdown', description: "Order By", button: "Newly Updated", options: ["Newly Updated", "Highest Rated", "Popular"] %>
+
+
+
   <% 5.times do %>
     <%= render 'fanfics/fanfic_card' %>
   <% end %>

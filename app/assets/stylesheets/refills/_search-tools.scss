@@ -50,6 +50,10 @@
     }
   }
 
+  .dropdown-filter {
+    @extend .filter;
+  }
+
   .trigger {
     width: 100%;
 
