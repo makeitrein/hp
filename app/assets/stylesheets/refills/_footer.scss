@@ -1,3 +1,10 @@
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  padding-bottom: 100px;
+}
+
 footer {
   $footer-background: desaturate(darken($base-accent-color, 20), 30);
   background: $footer-background;

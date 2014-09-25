@@ -1,6 +1,17 @@
 .home {
-  @include outer-container();
-  margin: 1em auto;
+  @include outer-container;
+  padding-top: 1em;
+
+  .home-welcome {
+    font: 800 64px/64px "Open Sans";
+    text-align: center;
+    margin-bottom: 1em;
+  }
+
+  .home-italic {
+    font: 400 60px/60px "gentium book basic";
+    font-style: italic;
+  }
 
 }
 
