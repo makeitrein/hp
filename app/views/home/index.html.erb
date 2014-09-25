@@ -4,9 +4,11 @@
 
   <%= render 'layouts/dropdown', description: "Order By", button: "Newly Updated", options: ["Newly Updated", "Highest Rated", "Popular"] %>
 
+  <div class="fanfics">
 
+    <% 5.times do %>
+      <%= render 'fanfics/fanfic_card' %>
+    <% end %>
 
-  <% 5.times do %>
-    <%= render 'fanfics/fanfic_card' %>
-  <% end %>
+  </div>
 </div>
