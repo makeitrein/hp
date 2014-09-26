@@ -3,9 +3,17 @@ class TagsController < ApplicationController
   end
 
   def create
+    @tag = Tag.new(tag_params)
+    if @tag.save
+      flash[:success] =  "Successfully created new tag"
+      render 'index'
+    else
+      render 'new'
+    end
   end
 
   def new
+    @tag = Tag.new
   end
 
   def delete
@@ -13,4 +21,9 @@ class TagsController < ApplicationController
 
   def show
   end
+
+  private
+    def tag_params
+      params.require(:tag).permit(:name)
+    end
 end

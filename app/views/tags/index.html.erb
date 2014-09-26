@@ -1,6 +1,12 @@
 <div class="tags">
-  <%= render 'layouts/dropdown', description: "Order By", button: "Newly Updated", options: ["Newly Created", "Most Used", "Least Used"] %>
-
+  <%= link_to new_tag_path do %>
+    <button class="header-button">
+      Create New Tag
+    </button>
+  <% end %>
+  <div class="row">
+    <%= render 'layouts/dropdown', description: "Order By", button: "Newly Updated", options: ["Newly Created", "Most Used", "Least Used"] %>
+  </div>
   <% 30.times do %>
     <span class="tag">Manip!Dumbledore</span>
   <% end %>

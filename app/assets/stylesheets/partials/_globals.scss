@@ -30,3 +30,12 @@
   clear: both;
   height: 0;
 }
+
+.header-button {
+  float: left;
+  margin: 1em;
+}
+
+.row {
+  @include outer-container;
+}

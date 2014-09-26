@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140824201309) do
+ActiveRecord::Schema.define(version: 20140926041950) do
 
   create_table "fanfics", force: true do |t|
     t.string   "title"
@@ -22,6 +22,23 @@ ActiveRecord::Schema.define(version: 20140824201309) do
     t.datetime "updated"
     t.integer  "user_id"
     t.integer  "status"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "taggings", force: true do |t|
+    t.integer  "tag_id"
+    t.integer  "fanfic_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "taggings", ["fanfic_id"], name: "index_taggings_on_fanfic_id"
+  add_index "taggings", ["tag_id"], name: "index_taggings_on_tag_id"
+
+  create_table "tags", force: true do |t|
+    t.string   "name"
+    t.integer  "count"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
