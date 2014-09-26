@@ -4,9 +4,10 @@ main {
 
 .home {
   padding-top: 1em;
+  @include outer-container;
+
 
   .search-tools {
-    @include span-columns(12);
 
     .filter:nth-of-type(n+4) {
       padding-top: 1em;
