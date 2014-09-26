@@ -114,11 +114,11 @@
         <ol>
           <li>
             <input id="short" type="checkbox">
-            <label for="short">General Audience</label>
+            <label for="short">General</label>
           </li>
           <li>
             <input id="long" type="checkbox">
-            <label for="long">Parental Guidance</label>
+            <label for="long">PG</label>
           </li>
           <li>
             <input id="short" type="checkbox">
@@ -190,7 +190,7 @@
     </div>
 
     <div class="filter">
-      <label>Cross Overs</label>
+      <label>Genres? Tags</label>
       <div>
         <ol>
           <li>
@@ -321,6 +321,19 @@
 
   $(function () {
     Filter.enhance();
+
+    $(document).on("click", "body", function(e) {
+      console.log(e.target);
+
+      $target = $(e.target);
+
+      if ($target.is('label') || $target.is('input')) {
+        return;
+      } else {
+        $(".filter").find("div").removeClass("hide-options").addClass("hide-options");
+      }
+    })
+
   });
 
 </script>
