@@ -1,12 +1,13 @@
 class TagsController < ApplicationController
   def index
+    @tags = Tag.all;
   end
 
   def create
     @tag = Tag.new(tag_params)
     if @tag.save
       flash[:success] =  "Successfully created new tag"
-      render 'index'
+      redirect_to 'index'
     else
       render 'new'
     end

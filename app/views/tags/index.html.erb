@@ -7,8 +7,8 @@
   <div class="row">
     <%= render 'layouts/dropdown', description: "Order By", button: "Newly Updated", options: ["Newly Created", "Most Used", "Least Used"] %>
   </div>
-  <% 30.times do %>
-    <span class="tag">Manip!Dumbledore</span>
+  <% @tags.each do |tag| %>
+    <span class="tag"><%= tag.name %></span>
   <% end %>
 </div>
 
