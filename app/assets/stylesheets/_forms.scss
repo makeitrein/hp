@@ -1,4 +1,4 @@
-.sign-up-page, .login-page {
+.sign-up-page, .login-page, .block-form {
   margin: 1em auto 0 auto;
   @include span-columns(6);
   @include shift(3);
@@ -13,4 +13,8 @@
     text-align: right;
   }
 
+}
+
+select {
+  display: inline-block;
 }

@@ -1,8 +1,13 @@
-<%= simple_form_for @fanfic do |f| %>
-  <%= f.input :title %>
-  <%= f.input :author %>
-  <%= f.input :description %>
-  <%= f.input :word_count %>
-  <%= f.input :published %>
-  <%= f.input :updated %>
-<% end %>
+<div class="new-fanfic">
+
+
+  <%= simple_form_for @fanfic, html: {class: "block-form"} do |f| %>
+    <%= f.input :title %>
+    <%= f.input :author %>
+    <%= f.input :description %>
+    <%= f.input :word_count %>
+    <%= f.input :published %>
+    <%= f.input :updated %>
+  <% end %>
+
+</div>

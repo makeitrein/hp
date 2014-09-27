@@ -1,5 +1,14 @@
 class Fanfic < ActiveRecord::Base
-  attr_accessible :title, :author, :description, :word_count, :published, :updated, :status
+
+  enum mpaa: [:assign_me, :g, :pg, :pg_13, :r, :nc_17]
+  enum relationship_type: [:hetero, :slash, :fem_slash]
+
+
+
+
+
+
+
   has_many :taggings
   has_many :tags, through: :taggings
 
