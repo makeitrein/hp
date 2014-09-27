@@ -7,7 +7,7 @@ class TagsController < ApplicationController
     @tag = Tag.new(tag_params)
     if @tag.save
       flash[:success] =  "Successfully created new tag"
-      redirect_to 'index'
+      redirect_to action: 'index'
     else
       render 'new'
     end
