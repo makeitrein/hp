@@ -1,14 +1,5 @@
 class Fanfic < ActiveRecord::Base
 
-  enum mpaa: [:assign_me, :g, :pg, :pg_13, :r, :nc_17]
-  enum relationship_type: [:hetero, :slash, :fem_slash]
-
-
-
-
-
-
-
   has_many :taggings
   has_many :tags, through: :taggings
 
