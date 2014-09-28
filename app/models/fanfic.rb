@@ -2,6 +2,7 @@ class Fanfic < ActiveRecord::Base
   has_many :taggings
   has_many :tags, through: :taggings
   belongs_to :mpaas
+  belongs_to :relationship_types
 
   def self.tagged_with(name)
     Tag.find_by_name!(name).fanfics

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140928010714) do
+ActiveRecord::Schema.define(version: 20140928012451) do
 
   create_table "characters", force: true do |t|
     t.string   "name"
@@ -25,6 +25,16 @@ ActiveRecord::Schema.define(version: 20140928010714) do
     t.datetime "updated_at"
   end
 
+  create_table "fanfic_characters", force: true do |t|
+    t.integer  "fanfic_id"
+    t.integer  "character_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "fanfic_characters", ["character_id"], name: "index_fanfic_characters_on_character_id"
+  add_index "fanfic_characters", ["fanfic_id"], name: "index_fanfic_characters_on_fanfic_id"
+
   create_table "fanfics", force: true do |t|
     t.string   "title"
     t.string   "author"
@@ -37,9 +47,11 @@ ActiveRecord::Schema.define(version: 20140928010714) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "mpaa_id"
+    t.integer  "relationship_type_id"
   end
 
   add_index "fanfics", ["mpaa_id"], name: "index_fanfics_on_mpaa_id"
+  add_index "fanfics", ["relationship_type_id"], name: "index_fanfics_on_relationship_type_id"
 
   create_table "mpaas", force: true do |t|
     t.string   "name"
