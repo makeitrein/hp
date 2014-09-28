@@ -3,6 +3,13 @@ class FanficsController < ApplicationController
   end
 
   def create
+    @fanfic = Fanfic.new(fanfic_params)
+    if @fanfic.save
+      flash[:success] = "Nice job! It's a new fanfic!"
+      redirect_to @fanfic
+    else
+      render 'new'
+    end
   end
 
   def new
@@ -13,6 +20,7 @@ class FanficsController < ApplicationController
   end
 
   def show
+    @fanfic = Fanfic.find(params[:id])
   end
 
   private
@@ -22,7 +30,11 @@ class FanficsController < ApplicationController
                                      :description,
                                      :word_count,
                                      :published,
-                                     :updated
+                                     :updated,
+                                     :relationship_type_id,
+                                     :character_ids,
+                                     :mpaa_id,
+                                     :crossover_ids
       )
     end
 end
