@@ -6,9 +6,10 @@
     <%= f.input :author %>
     <%= f.input :description %>
     <%= f.input :word_count %>
-    <%= f.input :published %>
-    <%= f.input :updated %>
+    <%= f.input :published, as: :date %>
+    <%= f.input :updated, as: :date %>
     <%= f.association :relationship_type %>
+    <%= f.association :mpaa %>
   <% end %>
 
 </div>

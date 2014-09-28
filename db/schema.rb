@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140928012748) do
+ActiveRecord::Schema.define(version: 20140928012451) do
 
   create_table "characters", force: true do |t|
     t.string   "name"
@@ -48,10 +48,8 @@ ActiveRecord::Schema.define(version: 20140928012748) do
     t.datetime "updated_at"
     t.integer  "mpaa_id"
     t.integer  "relationship_type_id"
-    t.integer  "crossover_id"
   end
 
-  add_index "fanfics", ["crossover_id"], name: "index_fanfics_on_crossover_id"
   add_index "fanfics", ["mpaa_id"], name: "index_fanfics_on_mpaa_id"
   add_index "fanfics", ["relationship_type_id"], name: "index_fanfics_on_relationship_type_id"
 
