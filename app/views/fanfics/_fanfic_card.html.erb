@@ -1,10 +1,17 @@
 <div class="fanfic card">
-  <div class="ribbon-wrapper"><div class="ribbon">Staff Pick</div></div>
+  <% if @fanfic.staff_pick %>
+    <div class="ribbon-wrapper">
+      <div class="ribbon">Staff Pick</div>
+    </div>
+  <% end %>
+
+
   <div class="card-header">
-    Harry Potter and the Methods of Rationality    <div class="card-update">Updated 35 minutes ago</div>
+    <%= @fanfic.title %>
+    <div class="card-update">updated <%= time_ago_in_words @fanfic.updated %> ago</div>
   </div>
   <div class="card-copy">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, officiis sunt neque facilis culpa molestiae necessitatibus delectus veniam provident.</p>
+    <p><%= @fanfic.description %></p>
   </div>
   <div class="card-tags">
     <span class="tag">#Manip!Dumbledore</span>
@@ -18,10 +25,12 @@
   <div class="card-stats">
     <ul>
       <li>97%<span>Rating</span></li>
-      <li>298k<span>Words</span></li>
-      <li>05/12/13<span>Release Date</span></li>
-      <li>G<span>MPAA</span></li>
-
+      <li><%= @fanfic.word_count %>
+        <span>Words</span></li>
+      <li><%= format_date @fanfic.published %>
+        <span>Release Date</span></li>
+      <li><%= @fanfic.mpaa %>
+        <span>MPAA</span></li>
     </ul>
   </div>
 </div>
