@@ -5,6 +5,9 @@ class Fanfic < ActiveRecord::Base
   has_many :fanfic_characters
   has_many :characters, through: :fanfic_characters
 
+  has_many :fanfic_crossovers
+  has_many :crossovers, through: :fanfic_crossovers
+
   belongs_to :mpaa
   belongs_to :relationship_type
   belongs_to :fanfic
