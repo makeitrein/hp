@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140927213857) do
+ActiveRecord::Schema.define(version: 20140928010714) do
 
   create_table "characters", force: true do |t|
     t.string   "name"
@@ -36,7 +36,10 @@ ActiveRecord::Schema.define(version: 20140927213857) do
     t.integer  "status"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "mpaa_id"
   end
+
+  add_index "fanfics", ["mpaa_id"], name: "index_fanfics_on_mpaa_id"
 
   create_table "mpaas", force: true do |t|
     t.string   "name"
