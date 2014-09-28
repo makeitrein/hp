@@ -1,19 +1,20 @@
-<div class="notice">Users who have read Harry Potter and the Methods of rationality have also read: "Jungle in the Bungle",
-"Lily Potter and the Art of Being Sysyphus", "Wand (SI)"</div>
+<div class="fanfic-show">
 
-<%= render 'fanfic_card' %>
+  <div class="first-fanfic clearfix">
+    <%= render 'fanfic_card' %>
+  </div>
 
-<form class="review-form">
+  <form class="review-form card">
   <span class="comment-stars rating">
     <% 10.times do %>
     <i class="fa fa-star"></i>
       <% end %>
     </span>
-  <input type="text" name="title" class="title" placeholder="Headline for your review">
-  <textarea name="review" class="review"></textarea>
+    <input type="text" name="title" class="title" placeholder="Headline for your review">
+    <textarea name="review" class="review"></textarea>
+  </form>
 
-</form>
-
-<% 10.times do %>
-<%= render 'comments/comment' %>
-<% end %>
+  <% 10.times do %>
+    <%= render 'comments/comment' %>
+  <% end %>
+</div>
