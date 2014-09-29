@@ -19,7 +19,7 @@ main {
   }
 
   .dropdown {
-    @include span-columns(12);
+    @include outer-container;
   }
 
 }

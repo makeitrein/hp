@@ -8,7 +8,7 @@
 
   <div class="card-header">
     <%= @fanfic.title %>
-    <div class="card-update">updated <%= time_ago_in_words @fanfic.updated %> ago</div>
+    <div class="card-update">by <%= @fanfic.author %> | updated <%= time_ago_in_words @fanfic.updated %> ago</div>
   </div>
   <div class="card-copy">
     <p><%= @fanfic.description %></p>
