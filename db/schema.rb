@@ -19,12 +19,6 @@ ActiveRecord::Schema.define(version: 20140928023542) do
     t.datetime "updated_at"
   end
 
-  create_table "crossovers", force: true do |t|
-    t.string   "name"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "fanfic_characters", force: true do |t|
     t.integer  "fanfic_id"
     t.integer  "character_id"
@@ -34,16 +28,6 @@ ActiveRecord::Schema.define(version: 20140928023542) do
 
   add_index "fanfic_characters", ["character_id"], name: "index_fanfic_characters_on_character_id"
   add_index "fanfic_characters", ["fanfic_id"], name: "index_fanfic_characters_on_fanfic_id"
-
-  create_table "fanfic_crossovers", force: true do |t|
-    t.integer  "fanfic_id"
-    t.integer  "crossover_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "fanfic_crossovers", ["crossover_id"], name: "index_fanfic_crossovers_on_crossover_id"
-  add_index "fanfic_crossovers", ["fanfic_id"], name: "index_fanfic_crossovers_on_fanfic_id"
 
   create_table "fanfics", force: true do |t|
     t.string   "title"
@@ -56,24 +40,7 @@ ActiveRecord::Schema.define(version: 20140928023542) do
     t.integer  "status"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "mpaa_id"
-    t.integer  "relationship_type_id"
     t.boolean  "staff_pick"
-  end
-
-  add_index "fanfics", ["mpaa_id"], name: "index_fanfics_on_mpaa_id"
-  add_index "fanfics", ["relationship_type_id"], name: "index_fanfics_on_relationship_type_id"
-
-  create_table "mpaas", force: true do |t|
-    t.string   "name"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "relationship_types", force: true do |t|
-    t.string   "name"
-    t.datetime "created_at"
-    t.datetime "updated_at"
   end
 
   create_table "taggings", force: true do |t|
