@@ -1,7 +1,9 @@
 class Fanfic < ActiveRecord::Base
 
-  WORD_COUNT_OPTIONS = [["< 1k", "under_1k"], ["< 5k", "under_5k"], ["> 10k", "over_10k"], ["> 20k", "over_20k"], ["> 40k", "over_40k"], ["> 60k", "over_60k"], ["> 100k", "over_100k"]]
-  # validates :title, :inclusion => {:in => TITLES}
+  WORD_COUNT_OPTIONS = ["under 1k", "under 5k", "over 1k", "over 5k","over 10k","over 20k","over 40k","over 60k","over 100k"]
+  CROSSOVER_OPTIONS = ["Warhammer", "Naruto", "Final Fantasy"]
+  RELATIONSHIP_OPTIONS = ["Hetero", "Slash", "FemSlash"]
+  MPAA_OPTIONS = ["G", "PG", "PG-13", "R", "NC-17"]
 
   has_many :taggings
   has_many :tags, through: :taggings
@@ -9,11 +11,9 @@ class Fanfic < ActiveRecord::Base
   has_many :fanfic_characters
   has_many :characters, through: :fanfic_characters
 
-  has_many :fanfic_crossovers
-  has_many :crossovers, through: :fanfic_crossovers
 
-  belongs_to :mpaa
-  belongs_to :relationship_type
+  validates :word_count, :inclusion => {:in => WORD_COUNT_OPTIONS}
+
   belongs_to :fanfic
 
   def self.tagged_with(name)
@@ -34,5 +34,4 @@ class Fanfic < ActiveRecord::Base
       Tag.where(name: n.strip).first_or_create!
     end
   end
-
-end
+  end

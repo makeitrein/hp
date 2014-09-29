@@ -8,9 +8,9 @@
     <%= f.input :word_count %>
     <%= f.input :published, as: :date %>
     <%= f.input :updated, as: :date %>
-    <%= f.association :relationship_type %>
-    <%= f.association :mpaa %>
-    <%= f.association :crossovers %>
+    <%= f.input :relationship, collection: Fanfic::RELATIONSHIP_OPTIONS %>
+    <%= f.input :mpaa, collection: Fanfic::MPAA_OPTIONS %>
+    <%= f.input :crossover, collection: Fanfic::CROSSOVER_OPTIONS %>
     <%= f.association :characters %>
     <%= f.button :submit %>
   <% end %>
