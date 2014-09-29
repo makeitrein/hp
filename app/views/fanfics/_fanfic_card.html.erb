@@ -1,4 +1,5 @@
 <div class="fanfic card">
+
   <% if @fanfic.staff_pick %>
     <div class="ribbon-wrapper">
       <div class="ribbon">Staff Pick</div>
@@ -7,7 +8,7 @@
 
 
   <div class="card-header">
-    <%= @fanfic.title %>
+    <%= link_to @fanfic.title, @fanfic %>
     <div class="card-update">by <%= @fanfic.author %> | updated <%= time_ago_in_words @fanfic.updated %> ago</div>
   </div>
   <div class="card-copy">

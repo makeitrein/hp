@@ -17,7 +17,7 @@
   border-radius: $base-border-radius;
   border: $card-border;
   margin-bottom: $base-line-height;
-  cursor: pointer;
+//  cursor: pointer;
   box-shadow: 0 2px 4px darken($base-background-color, 10);
   position: relative;
 
@@ -121,17 +121,17 @@
     }
   }
 
-  &:hover {
-    background-color: $card-hover-background;
-
-    .card-image img {
-      background: $card-image-hover-background;
-    }
-
-    .card-header {
-      background-color: $card-hover-background;
-    }
-  }
+//  &:hover {
+//    background-color: $card-hover-background;
+//
+//    .card-image img {
+//      background: $card-image-hover-background;
+//    }
+//
+//    .card-header {
+//      background-color: $card-hover-background;
+//    }
+//  }
 
   &:active {
     background-color: $card-background;
