@@ -20,18 +20,23 @@
       margin-bottom: 0;
     }
 
+    select {
+      @extend input[type="text"];
+      height: 40px;
+    }
+
     > div {
       @extend input[type="text"];
       position: relative;
 
-      label {
+      label, select {
         font-weight: 400;
         cursor: pointer;
         margin-bottom: 0;
       }
     }
 
-    ol label {
+    ol label, ol select {
       display: inline;
     }
 

@@ -39,3 +39,8 @@
 .row {
   @include outer-container;
 }
+
+select {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0.1875em;
+}

@@ -1,4 +1,8 @@
 class Fanfic < ActiveRecord::Base
+
+  WORD_COUNT_OPTIONS = [["< 1k", "under_1k"], ["< 5k", "under_5k"], ["> 10k", "over_10k"], ["> 20k", "over_20k"], ["> 40k", "over_40k"], ["> 60k", "over_60k"], ["> 100k", "over_100k"]]
+  # validates :title, :inclusion => {:in => TITLES}
+
   has_many :taggings
   has_many :tags, through: :taggings
 
