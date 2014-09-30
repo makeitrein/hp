@@ -1,4 +1,4 @@
-<div class="fanfic-show">
+<div class="fanfic-show left">
 
   <div class="first-fanfic clearfix">
     <%= render 'fanfic_card' %>
@@ -15,4 +15,15 @@
   <% 10.times do %>
     <%= render 'comments/comment' %>
   <% end %>
+</div>
+
+<div class="fanfic-show right">
+
+  <div class="first-fanfic clearfix">
+    <% 10.times do %>
+      <%= render 'fanfic_card' %>
+    <% end %>
+  </div>
+
+  
 </div>

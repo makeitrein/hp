@@ -2,6 +2,8 @@
   margin-top: 1em;
 
   .card {
+    width: 100%;
+    padding: 1em 1.618em;
     margin-bottom: .5em;
     textarea {
       margin-bottom: 0;
@@ -12,4 +14,11 @@
     margin-top: 0;
     margin-bottom: 1em;
   }
+
+  &.left {
+    @include span-columns(8);
+  }&.right {
+    @include span-columns(4);
+  }
+
 }
