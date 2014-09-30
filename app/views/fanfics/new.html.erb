@@ -4,13 +4,14 @@
   <%= simple_form_for @fanfic, html: {class: "block-form"} do |f| %>
     <%= f.input :title %>
     <%= f.input :author %>
+    <%= f.input :url %>
     <%= f.input :description %>
     <%= f.input :word_count %>
     <%= f.input :published, as: :date %>
     <%= f.input :updated, as: :date %>
     <%= f.input :relationship, collection: Fanfic::RELATIONSHIP_OPTIONS %>
     <%= f.input :mpaa, collection: Fanfic::MPAA_OPTIONS %>
-    <%= f.input :crossover, collection: Fanfic::CROSSOVER_OPTIONS %>
+    <%= f.input :crossover, collection: Crossover.all %>
     <%= f.association :characters %>
     <%= f.button :submit %>
   <% end %>

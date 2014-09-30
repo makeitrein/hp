@@ -21,6 +21,7 @@ class FanficsController < ApplicationController
 
   def show
     @fanfic = Fanfic.find(params[:id])
+    @review = Review.new
   end
 
   private

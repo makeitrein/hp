@@ -13,7 +13,7 @@
   $card-stats-color: lighten($base-accent-color, 10);
 
   @include transition (all 0.2s ease-in-out);
-  background-color: $card-background;
+  background-color: $form-bg;
   border-radius: $base-border-radius;
   border: $card-border;
   margin-bottom: $base-line-height;
@@ -134,10 +134,10 @@
 //  }
 
   &:active {
-    background-color: $card-background;
+    background-color: $form-bg;
 
     .card-header {
-      background-color: $card-background;
+      background-color: $form-bg;
     }
   }
 }

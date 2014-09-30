@@ -1,7 +1,6 @@
 class Fanfic < ActiveRecord::Base
 
   WORD_COUNT_OPTIONS = ["under 1k", "under 5k", "over 1k", "over 5k","over 10k","over 20k","over 40k","over 60k","over 100k"]
-  CROSSOVER_OPTIONS = ["Warhammer", "Naruto", "Final Fantasy"]
   RELATIONSHIP_OPTIONS = ["Hetero", "Slash", "FemSlash"]
   MPAA_OPTIONS = ["G", "PG", "PG-13", "R", "NC-17"]
 
@@ -11,8 +10,10 @@ class Fanfic < ActiveRecord::Base
   has_many :fanfic_characters
   has_many :characters, through: :fanfic_characters
 
+  belongs_to :crossover
 
-  validates :word_count, :inclusion => {:in => WORD_COUNT_OPTIONS}
+
+  # validates :word_count, :inclusion => {:in => WORD_COUNT_OPTIONS}
 
   belongs_to :fanfic
 

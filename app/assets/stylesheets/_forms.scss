@@ -1,9 +1,25 @@
 .sign-up-page, .login-page, .block-form {
   margin: 1em auto 0 auto;
-  @include span-columns(6);
-  @include shift(3);
-  border: 4px solid #ddd;
-  padding: 2em;
+  @include span-columns(8);
+  @include shift(2);
+  padding: 19px;
+  background: $form-bg;
+  box-shadow: $form-box-shadow;
+  border: 1px solid $form-border-color;
+  border-radius: $form-border-radius;
+
+  &.full {
+    @include span-columns(12);
+    @include shift(0);
+  }
+
+  &.no-shift {
+    @include shift(0);
+  }
+  &.half {
+    @include shift(0);
+    @include span-columns(6);
+  }
 
   h2 {
     margin-bottom: 1em;
@@ -17,4 +33,75 @@
 
 select {
   display: inline-block;
+}
+
+legend {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin-bottom: 23px;
+  font-size: 19.5px;
+  line-height: inherit;
+  color: #212121;
+  border: 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.input {
+  @include outer-container();
+
+  label:not(.boolean) {
+
+    text-align: right;
+    font-size: 13px;
+    color: $label-color;
+
+    padding-top: 3px;
+
+    @include media($large-screen) {
+      @include span-columns(2);
+    }
+  }
+
+  input:not(.boolean), textarea, #fanfic_character_ids {
+    @include span-columns(12);
+
+    @include media($large-screen) {
+      @include span-columns(10);
+    }
+  }
+
+  label.boolean {
+    @include span-columns(10);
+    @include shift(2);
+    font-size: 13px;
+    color: $label-color;
+    text-align: right;
+    font-weight: normal;
+
+    [type=checkbox] {
+      margin-right: 7px;
+      margin-top: 0;
+    }
+  }
+
+  input.label {
+    padding-left: 10px;
+  }
+
+}
+
+.button {
+  float: right;
+}
+
+.radio input[type="radio"], .radio-inline input[type="radio"], .checkbox input[type="checkbox"], .checkbox-inline input[type="checkbox"] {
+  //  position: absolute;
+  //  margin-left: -20px;
+}
+
+input[type="radio"], input[type="checkbox"] {
+  margin: 4px 0 0;
+  margin-top: 1px \9;
+  line-height: normal;
 }

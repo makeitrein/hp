@@ -1,17 +1,15 @@
 .fanfic-show {
   margin-top: 1em;
 
-  .first-fanfic {
-    .fanfic {
-      width: 100%;
-    }
-  }
-
   .card {
-    width: 100%;
-    padding: 1em 1.618em;
+    margin-bottom: .5em;
     textarea {
       margin-bottom: 0;
     }
+  }
+
+  form {
+    margin-top: 0;
+    margin-bottom: 1em;
   }
 }

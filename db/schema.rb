@@ -11,9 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140929042314) do
+ActiveRecord::Schema.define(version: 20140930051735) do
 
   create_table "characters", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "crossovers", force: true do |t|
+    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -25,8 +31,8 @@ ActiveRecord::Schema.define(version: 20140929042314) do
     t.datetime "updated_at"
   end
 
-  add_index "fanfic_characters", ["character_id"], name: "index_fanfic_characters_on_character_id"
-  add_index "fanfic_characters", ["fanfic_id"], name: "index_fanfic_characters_on_fanfic_id"
+  add_index "fanfic_characters", ["character_id"], name: "index_fanfic_characters_on_character_id", using: :btree
+  add_index "fanfic_characters", ["fanfic_id"], name: "index_fanfic_characters_on_fanfic_id", using: :btree
 
   create_table "fanfics", force: true do |t|
     t.string   "title"
@@ -40,10 +46,23 @@ ActiveRecord::Schema.define(version: 20140929042314) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.boolean  "staff_pick"
-    t.string   "crossover"
     t.string   "relationship"
     t.string   "mpaa"
+    t.string   "url"
   end
+
+  create_table "reviews", force: true do |t|
+    t.integer  "fanfic_id"
+    t.integer  "user_id"
+    t.string   "headline"
+    t.text     "content"
+    t.integer  "rating"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "reviews", ["fanfic_id"], name: "index_reviews_on_fanfic_id", using: :btree
+  add_index "reviews", ["user_id"], name: "index_reviews_on_user_id", using: :btree
 
   create_table "taggings", force: true do |t|
     t.integer  "tag_id"
@@ -52,8 +71,8 @@ ActiveRecord::Schema.define(version: 20140929042314) do
     t.datetime "updated_at"
   end
 
-  add_index "taggings", ["fanfic_id"], name: "index_taggings_on_fanfic_id"
-  add_index "taggings", ["tag_id"], name: "index_taggings_on_tag_id"
+  add_index "taggings", ["fanfic_id"], name: "index_taggings_on_fanfic_id", using: :btree
+  add_index "taggings", ["tag_id"], name: "index_taggings_on_tag_id", using: :btree
 
   create_table "tags", force: true do |t|
     t.string   "name"
@@ -78,7 +97,7 @@ ActiveRecord::Schema.define(version: 20140929042314) do
     t.string   "username"
   end
 
-  add_index "users", ["email"], name: "index_users_on_email", unique: true
-  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
+  add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
+  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
 
 end

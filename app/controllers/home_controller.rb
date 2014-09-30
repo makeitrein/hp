@@ -1,5 +1,5 @@
 class HomeController < ApplicationController
   def index
-    @fanfic = Fanfic.find(1)
+    @fanfic = Fanfic.last
   end
 end

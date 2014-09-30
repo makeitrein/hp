@@ -4,15 +4,13 @@
     <%= render 'fanfic_card' %>
   </div>
 
-  <form class="review-form card">
-  <span class="comment-stars rating">
-    <% 10.times do %>
-    <i class="fa fa-star"></i>
-      <% end %>
-    </span>
-    <input type="text" name="title" class="title" placeholder="Headline for your review">
-    <textarea name="review" class="review"></textarea>
-  </form>
+  <%= simple_form_for @review, html: {class: "block-form half"} do |f| %>
+    <legend>Your Review for <%= @fanfic.title %></legend>
+    <%= f.input :rating %>
+    <%= f.input :headline %>
+    <%= f.input :content, label: "Review" %>
+  <% end %>
+
 
   <% 10.times do %>
     <%= render 'comments/comment' %>
