@@ -4,7 +4,7 @@
     <%= render 'fanfic_card' %>
   </div>
 
-  <%= simple_form_for @review, html: {class: "block-form half"} do |f| %>
+  <%= simple_form_for @review, html: {class: "block-form full"} do |f| %>
     <legend>Your Review for <%= @fanfic.title %></legend>
     <%= f.input :rating %>
     <%= f.input :headline %>
@@ -19,11 +19,11 @@
 
 <div class="fanfic-show right">
 
-  <div class="first-fanfic clearfix">
+  <div class=" clearfix">
     <% 10.times do %>
       <%= render 'fanfic_card' %>
     <% end %>
   </div>
 
-  
+
 </div>

@@ -1,7 +1,11 @@
 .fanfic-show {
   margin-top: 1em;
 
-  .card {
+  .card, form {
+    width: 100%;
+  }
+
+  .first-fanfic .card {
     width: 100%;
     padding: 1em 1.618em;
     margin-bottom: .5em;
@@ -9,6 +13,7 @@
       margin-bottom: 0;
     }
   }
+
 
   form {
     margin-top: 0;
