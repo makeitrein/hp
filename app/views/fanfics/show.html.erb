@@ -1,30 +1,26 @@
 <div class="fanfic-show left">
 
-  <%= link_to edit_fanfic_path(@fanfic) do %>
-    <button>Edit Fanfic</button>
-  <% end %>
-
   <div class="first-fanfic clearfix">
     <%= render 'fanfic_card' %>
   </div>
 
-  <%= simple_form_for @review, html: {class: "block-form full"} do |f| %>
-    <legend>Your Review for <%= @fanfic.title %></legend>
-    <%= f.input :rating %>
-    <%= f.input :headline %>
-    <%= f.input :content, label: "Review" %>
-  <% end %>
+
 
 
 
   <%= render 'layouts/dropdown', description: "Order By", button: "New", options: ["New", "Most Liked"] %>
+  <%= render 'reviews/new' %>
 
   <% 10.times do %>
-    <%= render 'comments/comment' %>
+    <%= render 'reviews/review' %>
   <% end %>
 </div>
 
 <div class="fanfic-show right">
+
+  <%= link_to edit_fanfic_path(@fanfic) do %>
+    <button>Edit Fanfic</button>
+  <% end %>
 
   <div class=" clearfix">
     <% 10.times do %>
@@ -34,3 +30,11 @@
 
 
 </div>
+
+
+<%= simple_form_for @review, html: {class: "block-form full"} do |f| %>
+  <legend>Your Review for <%= @fanfic.title %></legend>
+  <%= f.input :rating %>
+  <%= f.input :headline %>
+  <%= f.input :content, label: "Review" %>
+<% end %>
