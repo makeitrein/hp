@@ -1,5 +1,6 @@
-<%= simple_form_for @tag do |f| %>
+<%= simple_form_for @tag, html: {class: "block-form"} do |f| %>
+  <legend>Create New Tag</legend>
   <%= f.input :name %>
-  <%= f.submit %>
+  <%= f.button :submit %>
 
 <% end %>

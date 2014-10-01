@@ -1,8 +1,8 @@
-<div class="new-fanfic">
+<div class="update-fanfic">
 
 
   <%= simple_form_for @fanfic, html: {class: "block-form"} do |f| %>
-    <legend>Submit a new Fanfic</legend>
+    <legend>Update <%= @fanfic.title %></legend>
     <%= f.input :title %>
     <%= f.input :author %>
     <%= f.input :url %>

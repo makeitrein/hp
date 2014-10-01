@@ -1,5 +1,9 @@
 <div class="fanfic-show left">
 
+  <%= link_to edit_fanfic_path(@fanfic) do %>
+    <button>Edit Fanfic</button>
+  <% end %>
+
   <div class="first-fanfic clearfix">
     <%= render 'fanfic_card' %>
   </div>
@@ -11,6 +15,9 @@
     <%= f.input :content, label: "Review" %>
   <% end %>
 
+
+
+  <%= render 'layouts/dropdown', description: "Order By", button: "New", options: ["New", "Most Liked"] %>
 
   <% 10.times do %>
     <%= render 'comments/comment' %>
